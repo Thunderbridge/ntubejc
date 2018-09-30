@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://github.com/twtrubiks/Git-Tutorials -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com/">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com/">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-mjQPRAh2Y9A0sPdZzipNfPO7PT4g06mk0uZs15DbL/vsNCRGx1uRzWVzls9MJCoy2yRNjaMmEVFKJDpCui00mA==" rel="stylesheet" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/frameworks-df973073d880f28fbbae0263fb1ef62b.css">
+  <link crossorigin="anonymous" media="all" integrity="sha512-x3XWtGp2FswnywS4ehTjPN+9ZrQ/nzpjmzsqe4+O431WD/Y1+yIhoKC/5n8h1FqYe+Wu3Pk4Q/ZcLY2flUH6iw==" rel="stylesheet" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/github-19f6f486eb8ea86f813daa757a5e3870.css">
+  
+  
+  
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>twtrubiks/Git-Tutorials: Git-Tutorials  GIT基本使用教學</title>
+    <meta name="description" content="Git-Tutorials  GIT基本使用教學:memo:. Contribute to twtrubiks/Git-Tutorials development by creating an account on GitHub.">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta property="og:image" content="https://avatars1.githubusercontent.com/u/16622269?s=400&amp;v=4"><meta property="og:site_name" content="GitHub"><meta property="og:type" content="object"><meta property="og:title" content="twtrubiks/Git-Tutorials"><meta property="og:url" content="https://github.com/twtrubiks/Git-Tutorials"><meta property="og:description" content="Git-Tutorials  GIT基本使用教學:memo:. Contribute to twtrubiks/Git-Tutorials development by creating an account on GitHub.">
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MzE0Mjk3OTg4OmQ2NGFhYmRhOGZiNzliOTcyNjE2NDVlNTU0ODY1NTU4NjlmOTU4NzRiOWUzNjAzMmIyOGU3YWM2Y2M2Yjk5NDE=--62dba60b29eae3ffb38e820be84ddd5ffaa4f666">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="https://github.com/sessions/sudo_modal">
+  <meta name="request-id" content="ED7E:6063:D1196C:150BA6D:5BAF33D8" data-pjax-transient="">
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient="">
+
+      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com"><meta name="octolytics-app-id" content="github"><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event"><meta name="octolytics-dimension-request_id" content="ED7E:6063:D1196C:150BA6D:5BAF33D8"><meta name="octolytics-dimension-region_edge" content="iad"><meta name="octolytics-dimension-region_render" content="iad"><meta name="octolytics-actor-id" content="15240807"><meta name="octolytics-actor-login" content="Thunderbridge"><meta name="octolytics-actor-hash" content="00b8270613df2e5a1b06a81a5e04a5af5742e354b32ed40f0990e9a06f91d2b5">
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true">
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+  <meta class="js-ga-set" name="userId" content="148d90115aefe86d79ab1af497471a52" %="">
+
+<meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="Thunderbridge">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="Y2VjN2VkYzJhOTNlZGY4NzM2MTVkNTZlYTY4ODRmY2NhM2ZjY2I5ODdkNjM5ZmFiODQ3NjU5MGY5M2Y1ZWZkNXx7InJlbW90ZV9hZGRyZXNzIjoiNjAuMjUwLjc5LjExMCIsInJlcXVlc3RfaWQiOiJFRDdFOjYwNjM6RDExOTZDOjE1MEJBNkQ6NUJBRjMzRDgiLCJ0aW1lc3RhbXAiOjE1MzgyMDg3MjgsImhvc3QiOiJnaXRodWIuY29tIn0=">
+
+    <meta name="enabled-features" content="DASHBOARD_V2_LAYOUT_OPT_IN,EXPLORE_DISCOVER_REPOSITORIES,UNIVERSE_BANNER,MARKETPLACE_PLAN_RESTRICTION_EDITOR,MARKETPLACE_RETARGETING,COLLAPSE_REPEATED_COMMENTS">
+
+  <meta name="html-safe-nonce" content="0b8f2d12fa113e8653eaec72d3b25d2ee0e4f5d3">
+
+  <meta http-equiv="x-pjax-version" content="de7240a2a2c1261523184ee2aa9b2249">
+  
+
+      <link href="https://github.com/twtrubiks/Git-Tutorials/commits/master.atom" rel="alternate" title="Recent Commits to Git-Tutorials:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/twtrubiks/Git-Tutorials git https://github.com/twtrubiks/Git-Tutorials.git">
+
+  <meta name="octolytics-dimension-user_id" content="16622269"><meta name="octolytics-dimension-user_login" content="twtrubiks"><meta name="octolytics-dimension-repository_id" content="63858639"><meta name="octolytics-dimension-repository_nwo" content="twtrubiks/Git-Tutorials"><meta name="octolytics-dimension-repository_public" content="true"><meta name="octolytics-dimension-repository_is_fork" content="false"><meta name="octolytics-dimension-repository_network_root_id" content="63858639"><meta name="octolytics-dimension-repository_network_root_nwo" content="twtrubiks/Git-Tutorials"><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false">
+
+
+    <link rel="canonical" href="https://github.com/twtrubiks/Git-Tutorials" data-pjax-transient="">
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+  <link rel="manifest" href="https://github.com/manifest.json" crossorigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="https://github.com/twtrubiks/Git-Tutorials#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        
+<header class="Header  f5" role="banner">
+  <div class="d-flex flex-justify-between px-3 container-lg">
+    <div class="d-flex flex-justify-between ">
+      <div class="">
+        <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+
+      </div>
+
+    </div>
+
+    <div class="HeaderMenu d-flex flex-justify-between flex-auto">
+      <div class="d-flex">
+            <div class="">
+              <div class="header-search scoped-search site-scoped-search js-site-search position-relative js-jump-to" role="combobox" aria-owns="jump-to-results" aria-label="Search or jump to" aria-haspopup="listbox" aria-expanded="false">
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --><form class="js-site-search-form" data-scope-type="Repository" data-scope-id="63858639" data-scoped-search-url="/twtrubiks/Git-Tutorials/search" data-unscoped-search-url="/search" action="https://github.com/twtrubiks/Git-Tutorials/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+      <label class="form-control header-search-wrapper header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text" class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable" data-hotkey="s,/" name="q" value="" placeholder="Search or jump to…" data-unscoped-placeholder="Search or jump to…" data-scoped-placeholder="Search or jump to…" autocapitalize="off" aria-autocomplete="list" aria-controls="jump-to-results" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=96ePW62FYmxZT6XIpmTglQchx3lSqng1FcaxiLQNwS+Ea8EVZMnYf4wTz/o4F6K7dmdkqcmH8rulGA3aou7ItA==" spellcheck="false" autocomplete="off">
+          <input type="hidden" class="js-site-search-type-field" name="type">
+            <img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/search-shortcut-hint.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              <ul class="d-none js-jump-to-suggestions-template-container">
+                <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item" role="option">
+                  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center p-2 jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open" href="https://github.com/twtrubiks/Git-Tutorials">
+                    <div class="jump-to-octicon js-jump-to-octicon mr-2 text-center d-none">
+                      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+                      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+                      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
+                    </div>
+
+                    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="https://github.com/twtrubiks/Git-Tutorials" width="28" height="28">
+
+                    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+                    </div>
+
+                    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+                      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+                        In this repository
+                      </span>
+                      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+                        All GitHub
+                      </span>
+                      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+                    </div>
+
+                    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+                      Jump to
+                      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="d-none js-jump-to-no-results-template-container">
+                <li class="d-flex flex-justify-center flex-items-center p-3 f5 d-none">
+                  <span class="text-gray">No suggested jump to results</span>
+                </li>
+              </ul>
+
+              <ul id="jump-to-results" role="listbox" class="js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+                <li class="d-flex flex-justify-center flex-items-center p-0 f5">
+                  <img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/octocat-spinner-128.gif" alt="Octocat Spinner Icon" class="m-2" width="28">
+                </li>
+              </ul>
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+            </div>
+
+          <ul class="d-flex pl-2 flex-items-center text-bold list-style-none" role="navigation">
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="https://github.com/pulls">
+                Pull requests
+</a>            </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="https://github.com/issues">
+                Issues
+</a>            </li>
+              <li>
+                <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="https://github.com/marketplace">
+                   Marketplace
+</a>              </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="https://github.com/explore">
+                Explore
+</a>            </li>
+          </ul>
+      </div>
+
+      <div class="d-flex">
+        
+<ul class="user-nav d-flex flex-items-center list-style-none" id="user-links">
+  <li class="dropdown">
+    <span class="d-inline-block  px-2">
+      
+    <a aria-label="You have no unread notifications" class="notification-indicator tooltipped tooltipped-s  js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-channel="notification-changed:15240807" href="https://github.com/notifications">
+        <span class="mail-status "></span>
+        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13.99 11.991v1H0v-1l.73-.58c.769-.769.809-2.547 1.189-4.416.77-3.767 4.077-4.996 4.077-4.996 0-.55.45-1 .999-1 .55 0 1 .45 1 1 0 0 3.387 1.229 4.156 4.996.38 1.879.42 3.657 1.19 4.417l.659.58h-.01zM6.995 15.99c1.11 0 1.999-.89 1.999-1.999H4.996c0 1.11.89 1.999 1.999 1.999z"></path></svg>
+</a>
+    </span>
+  </li>
+
+  <li class="dropdown">
+    <details class="details-overlay details-reset d-flex px-2 flex-items-center">
+      <summary class="HeaderNavlink" aria-label="Create new…" data-ga-click="Header, create new, icon:add" aria-haspopup="menu">
+        <svg class="octicon octicon-plus float-left mr-1 mt-1" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"></path></svg>
+        <span class="dropdown-caret mt-1"></span>
+      </summary>
+      <details-menu class="dropdown-menu dropdown-menu-sw" role="menu">
+        
+<a role="menuitem" class="dropdown-item" href="https://github.com/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="https://github.com/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="https://github.com/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="twtrubiks/Git-Tutorials">This repository</span>
+  </div>
+    <a role="menuitem" class="dropdown-item" href="https://github.com/twtrubiks/Git-Tutorials/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+
+      </details-menu>
+    </details>
+  </li>
+
+  <li class="dropdown">
+
+    <details class="details-overlay details-reset d-flex pl-2 flex-items-center">
+      <summary class="HeaderNavlink name mt-1" aria-label="View profile and more" data-ga-click="Header, show menu, icon:avatar" aria-haspopup="menu">
+        <img alt="@Thunderbridge" class="avatar float-left mr-1" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/15240807" height="20" width="20">
+        <span class="dropdown-caret"></span>
+      </summary>
+      <details-menu class="dropdown-menu dropdown-menu-sw" role="menu">
+        <ul>
+          <li class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="https://github.com/Thunderbridge" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">Thunderbridge</strong></a></li>
+          <li class="dropdown-divider"></li>
+          <li><a role="menuitem" class="dropdown-item" href="https://github.com/Thunderbridge" data-ga-click="Header, go to profile, text:your profile">Your profile</a></li>
+          <li><a role="menuitem" class="dropdown-item" href="https://github.com/Thunderbridge?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories">Your repositories</a></li>
+
+
+          <li><a role="menuitem" class="dropdown-item" href="https://github.com/Thunderbridge?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars</a></li>
+            <li><a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, your gists, text:your gists">Your gists</a></li>
+          <li class="dropdown-divider"></li>
+          <li><a role="menuitem" class="dropdown-item" href="https://help.github.com/" data-ga-click="Header, go to help, text:help">Help</a></li>
+          <li><a role="menuitem" class="dropdown-item" href="https://github.com/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a></li>
+          <li>
+            <!-- '"` --><!-- </textarea></xmp> --><form class="logout-form" action="https://github.com/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="LhGGB7b5JtLha3b+m2bKHU8Pu1JfvUlfjHPn76A5IrplQztb/mAfHPS3wQO4ft1SAj8LDgVr0KVujlbNj3Sx3A==">
+              <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
+                Sign out
+              </button>
+</form>          </li>
+        </ul>
+      </details-menu>
+    </details>
+  </li>
+</ul>
+
+
+
+        <!-- '"` --><!-- </textarea></xmp> --><form class="sr-only right-0" action="https://github.com/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="R1gq8S7TCI9Jog2nYks+zqp6yZZIXBusXnGueE6YbNwMCpetZkoxQVx+ulpBUymB50p5yhKKgla8jB9aYdX/ug==">
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </div>
+</header>
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+
+
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container="">
+      
+
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+        <!-- '"` --><!-- </textarea></xmp> --><form data-remote="true" class="js-social-form js-social-container" action="https://github.com/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="BFeLFUyAvQ/KqTcoX2irQHKyUZzjdaJfseo+CpnK2qYqt0MdDCH0pYvhqHuOt9VWgTj21bNdPrjoaWLhL0M+sw==">      <input type="hidden" name="repository_id" id="repository_id" value="63858639" class="form-control">
+
+      <details class="details-reset details-overlay select-menu float-left">
+        <summary class="btn btn-sm btn-with-count select-menu-button" data-ga-click="Repository, click Watch settings, action:files#disambiguate" aria-haspopup="menu">
+          <span data-menu-button="">
+              <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+              Watch
+          </span>
+        </summary>
+        <details-menu class="select-menu-modal position-absolute mt-5" style="z-index: 99;" role="menu">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notifications</span>
+          </div>
+          <div class="select-menu-list">
+            <button type="submit" name="do" value="included" class="select-menu-item width-full" aria-checked="true" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Not watching</span>
+                <span class="description">Be notified when participating or @mentioned.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents="">
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                  Watch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="subscribed" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Watching</span>
+                <span class="description">Be notified of all conversations.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents="">
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                  Unwatch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="ignore" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Ignoring</span>
+                <span class="description">Never be notified.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents="">
+                  <svg class="octicon octicon-mute v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"></path></svg>
+                  Stop ignoring
+                </span>
+              </div>
+            </button>
+          </div>
+        </details-menu>
+      </details>
+      <a class="social-count js-social-count" href="https://github.com/twtrubiks/Git-Tutorials/watchers" aria-label="16 users are watching this repository">
+        16
+      </a>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --><form class="starred js-social-form" action="https://github.com/twtrubiks/Git-Tutorials/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="Cp4lnzWzAX3VEtde3gNeMqNgUZr52d4grJJ/oCW8nQAq/V2am5Unog6P9P0ZgnV6heg5alfGZ0IyMpW7SfqnIA==">
+      <input type="hidden" name="context" value="repository">
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar twtrubiks/Git-Tutorials" data-ga-click="Repository, click unstar button, action:files#disambiguate; text:Unstar">
+        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/twtrubiks/Git-Tutorials/stargazers" aria-label="230 users starred this repository">
+          230
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --><form class="unstarred js-social-form" action="https://github.com/twtrubiks/Git-Tutorials/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="6ACx7S21ZD/ERuHYkjOcSScdvhmwuwvLnLkZ1YJr08EsQ/wBm5vyuDPrHfzthu3rKaSyCGsHg3Dd0Paq6qrvKw==">
+      <input type="hidden" name="context" value="repository">
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Star this repository" title="Star twtrubiks/Git-Tutorials" data-ga-click="Repository, click star button, action:files#disambiguate; text:Star">
+        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/twtrubiks/Git-Tutorials/stargazers" aria-label="230 users starred this repository">
+          230
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <details class="details-reset details-overlay details-overlay-dark d-inline-block float-left" data-deferred-details-content-url="/twtrubiks/Git-Tutorials/fork?fragment=1">
+            <summary class="btn btn-sm btn-with-count" title="Fork your own copy of twtrubiks/Git-Tutorials to your account" data-ga-click="Repository, show fork modal, action:files#disambiguate; text:Fork" aria-haspopup="dialog">
+              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+              Fork
+            </summary>
+            <details-dialog class="anim-fade-in fast Box Box--overlay d-flex flex-column" role="dialog">
+              <div class="Box-header">
+                <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog="">
+                  <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+                </button>
+                <h3 class="Box-title">Where should we fork this repository?</h3>
+              </div>
+              <div class="Box-body overflow-auto text-center">
+                <include-fragment>
+                  <div class="octocat-spinner my-3" aria-label="Loading..."></div>
+                  <p class="f5 text-gray">If this dialog fails to load, you can visit <a href="https://github.com/twtrubiks/Git-Tutorials/fork">the fork page</a> directly.</p>
+                </include-fragment>
+              </div>
+            </details-dialog>
+          </details>
+
+    <a href="https://github.com/twtrubiks/Git-Tutorials/network/members" class="social-count" aria-label="69 users forked this repository">
+      69
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" href="https://github.com/twtrubiks">twtrubiks</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="https://github.com/twtrubiks/Git-Tutorials">Git-Tutorials</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container" itemscope="" itemtype="http://schema.org/BreadcrumbList" role="navigation" data-pjax="#js-repo-pjax-container">
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /twtrubiks/Git-Tutorials" href="https://github.com/twtrubiks/Git-Tutorials">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /twtrubiks/Git-Tutorials/issues" href="https://github.com/twtrubiks/Git-Tutorials/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">1</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /twtrubiks/Git-Tutorials/pulls" href="https://github.com/twtrubiks/Git-Tutorials/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /twtrubiks/Git-Tutorials/projects" href="https://github.com/twtrubiks/Git-Tutorials/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+      Projects
+      <span class="Counter">0</span>
+</a>
+
+
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /twtrubiks/Git-Tutorials/wiki" href="https://github.com/twtrubiks/Git-Tutorials/wiki">
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+      Wiki
+</a>
+  <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse alerts /twtrubiks/Git-Tutorials/pulse" href="https://github.com/twtrubiks/Git-Tutorials/pulse">
+    <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"></path></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  
+
+    <div class="">  <div class="f4">
+        <span class="text-gray-dark mr-2" itemprop="about">
+          Git-Tutorials GIT基本使用教學<g-emoji class="g-emoji" alias="memo" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png"><img class="emoji" alt="memo" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f4dd.png"></g-emoji>
+
+        </span>
+  </div>
+</div>
+
+    <div class="repository-topics-container mt-2 mb-3 js-topics-list-container">  <div class="list-topics-container f6">
+      <a href="https://github.com/topics/git-rebase" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:git-rebase">
+        git-rebase
+      </a>
+      <a href="https://github.com/topics/ssh-key" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:ssh-key">
+        ssh-key
+      </a>
+      <a href="https://github.com/topics/git-tutorial" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:git-tutorial">
+        git-tutorial
+      </a>
+      <a href="https://github.com/topics/github" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:github">
+        github
+      </a>
+      <a href="https://github.com/topics/tutorial" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:tutorial">
+        tutorial
+      </a>
+  </div>
+</div>
+
+
+
+  <div class="overall-summary ">
+    <div class="stats-switcher-viewport js-stats-switcher-viewport">
+      <div class="stats-switcher-wrapper">
+      <ul class="numbers-summary">
+        <li class="commits">
+          <a data-pjax="" href="https://github.com/twtrubiks/Git-Tutorials/commits/master">
+              <svg class="octicon octicon-history" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 13H6V6h5v2H8v5zM7 1C4.81 1 2.87 2.02 1.59 3.59L0 2v4h4L2.5 4.5C3.55 3.17 5.17 2.3 7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-.34.03-.67.09-1H.08C.03 7.33 0 7.66 0 8c0 3.86 3.14 7 7 7s7-3.14 7-7-3.14-7-7-7z"></path></svg>
+              <span class="num text-emphasized">
+                45
+              </span>
+              commits
+          </a>
+        </li>
+        <li>
+          <a data-pjax="" href="https://github.com/twtrubiks/Git-Tutorials/branches">
+            <svg class="octicon octicon-git-branch" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+            <span class="num text-emphasized">
+              1
+            </span>
+            branch
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/twtrubiks/Git-Tutorials/releases">
+            <svg class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.685 1.72a2.49 2.49 0 0 0-1.76-.726H3.48A2.5 2.5 0 0 0 .994 3.48v2.456c0 .656.269 1.292.726 1.76l6.024 6.024a.99.99 0 0 0 1.402 0l4.563-4.563a.99.99 0 0 0 0-1.402L7.685 1.72zM2.366 7.048a1.54 1.54 0 0 1-.467-1.123V3.48c0-.874.716-1.58 1.58-1.58h2.456c.418 0 .825.159 1.123.467l6.104 6.094-4.702 4.702-6.094-6.114zm.626-4.066h1.989v1.989H2.982V2.982h.01z"></path></svg>
+            <span class="num text-emphasized">
+              0
+            </span>
+            releases
+          </a>
+        </li>
+
+
+        <li>
+            <a href="https://github.com/twtrubiks/Git-Tutorials/graphs/contributors">
+  <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4z"></path></svg>
+    <span class="num text-emphasized">
+      1
+    </span>
+    contributor
+</a>
+
+        </li>
+          <li>
+            <a href="https://github.com/twtrubiks/Git-Tutorials/blob/master/LICENSE">
+              <svg class="octicon octicon-law" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"></path></svg>
+                MIT
+            </a>
+          </li>
+      </ul>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <div class="mt-2">
+      
+    </div>
+
+  <div class="file-navigation in-mid-page d-flex flex-items-start">
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w" type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax="">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="https://github.com/twtrubiks/Git-Tutorials#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="https://github.com/twtrubiks/Git-Tutorials#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected" href="https://github.com/twtrubiks/Git-Tutorials/tree/master" data-name="master" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+        <a href="https://github.com/twtrubiks/Git-Tutorials/pull/new/master" class="btn btn-sm new-pull-request-btn" data-pjax="" data-ga-click="Repository, new pull request, location:repo overview">
+          New pull request
+        </a>
+
+  <div class="breadcrumb flex-auto">
+    
+  </div>
+
+  <div class="BtnGroup">
+      
+  <!-- '"` --><!-- </textarea></xmp> --><form class="BtnGroup-form" action="https://github.com/twtrubiks/Git-Tutorials/new/master" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ozJjmP4Gk4HyEVZulg5OmoEgP9GRUCOVbok0hlNdYBPLcoSMhqHVBT+qryNdRF3Fsb016sQCoi5nRXDVgUCS5A==">
+    <button class="btn btn-sm BtnGroup-item" type="submit" data-disable-with="Creating file…">
+      Create new file
+    </button>
+</form>
+
+      
+  <a href="https://github.com/twtrubiks/Git-Tutorials/upload/master" class="btn btn-sm BtnGroup-item">
+    Upload files
+  </a>
+
+
+    <a href="https://github.com/twtrubiks/Git-Tutorials/find/master" class="btn btn-sm empty-icon float-right BtnGroup-item" data-pjax="" data-hotkey="t" data-ga-click="Repository, find file, location:repo overview">
+      Find file
+    </a>
+  </div>
+  
+
+    <details class="get-repo-select-menu js-get-repo-select-menu position-relative details-overlay details-reset">
+  <summary class="btn btn-sm btn-primary">
+    Clone or download
+    <span class="dropdown-caret"></span>
+  </summary>
+  <div class="position-relative">
+    <div class="get-repo-modal dropdown-menu dropdown-menu-sw pb-0 js-toggler-container  js-get-repo-modal">
+
+      <div class="get-repo-modal-options">
+          <div class="clone-options https-clone-options">
+              <!-- '"` --><!-- </textarea></xmp> --><form data-remote="true" action="https://github.com/users/set_protocol?protocol_selector=ssh&amp;protocol_type=clone" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="RYiTMCoRmmCvneFNQuU7toQwYz1jTt3e1cuqG9n+e3FhLbLHY0EklpgA+pXHabQXDmR9QEXog+v+d7rjbmxbBA=="><button type="submit" class="btn-link btn-change-protocol js-toggler-target float-right">Use SSH</button></form>
+
+            <h4 class="mb-1">
+              Clone with HTTPS
+              <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+                <svg class="octicon octicon-question" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path></svg>
+              </a>
+            </h4>
+            <p class="mb-2 get-repo-decription-text">
+              Use Git or checkout with SVN using the web URL.
+            </p>
+
+            <div class="input-group">
+  <input type="text" class="form-control input-monospace input-sm" data-autoselect="" value="https://github.com/twtrubiks/Git-Tutorials.git" aria-label="Clone this repository at https://github.com/twtrubiks/Git-Tutorials.git" readonly="">
+  <div class="input-group-button">
+    <clipboard-copy value="https://github.com/twtrubiks/Git-Tutorials.git" aria-label="Copy to clipboard" class="btn btn-sm" tabindex="0" role="button">
+      <svg class="octicon octicon-clippy" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"></path></svg>
+    </clipboard-copy>
+  </div>
+</div>
+
+          </div>
+
+          <div class="clone-options ssh-clone-options">
+              <!-- '"` --><!-- </textarea></xmp> --><form data-remote="true" action="https://github.com/users/set_protocol?protocol_selector=https&amp;protocol_type=clone" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ccLSjKGwvrrWE7c0+yfvzmh2f/o2nO3J8AhGitlVkYxVZ/N76OAATOGOrOx+q2Bv4iJhhxA6s/zbtFZybsex+Q=="><button type="submit" class="btn-link btn-change-protocol js-toggler-target float-right">Use HTTPS</button></form>
+
+              <h4 class="mb-1">
+                Clone with SSH
+                <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+                  <svg class="octicon octicon-question" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path></svg>
+                </a>
+              </h4>
+              <p class="mb-2 get-repo-decription-text">
+                Use an SSH key and passphrase from account.
+              </p>
+
+              <div class="input-group">
+  <input type="text" class="form-control input-monospace input-sm" data-autoselect="" value="git@github.com:twtrubiks/Git-Tutorials.git" aria-label="Clone this repository at git@github.com:twtrubiks/Git-Tutorials.git" readonly="">
+  <div class="input-group-button">
+    <clipboard-copy value="git@github.com:twtrubiks/Git-Tutorials.git" aria-label="Copy to clipboard" class="btn btn-sm" tabindex="0" role="button">
+      <svg class="octicon octicon-clippy" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"></path></svg>
+    </clipboard-copy>
+  </div>
+</div>
+
+          </div>
+        <div class="mt-2">
+            <a href="x-github-client://openRepo/https://github.com/twtrubiks/Git-Tutorials" class="btn btn-outline get-repo-btn tooltipped tooltipped-s tooltipped-multiline js-get-repo" data-open-app="windows" aria-label="Clone twtrubiks/Git-Tutorials to your computer and use it in GitHub Desktop.">
+    Open in Desktop
+  </a>
+
+<a href="https://github.com/twtrubiks/Git-Tutorials/archive/master.zip" class="btn btn-outline get-repo-btn
+" rel="nofollow" data-ga-click="Repository, download zip, location:repo overview">
+  Download ZIP
+</a>
+
+        </div>
+      </div>
+
+      <div class="js-modal-download-mac py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching GitHub Desktop<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://desktop.github.com/">download GitHub Desktop</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-windows py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching GitHub Desktop<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://desktop.github.com/">download GitHub Desktop</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-xcode py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching Xcode<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://developer.apple.com/xcode/">download Xcode</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-visual-studio py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching Visual Studio<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://visualstudio.github.com/">download the GitHub extension for Visual Studio</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+    </div>
+  </div>
+</details>
+
+</div>
+
+
+  
+
+
+  <div class="commit-tease js-details-container Details d-flex">
+    
+<div class="AvatarStack flex-self-start ">
+  <div class="AvatarStack-body" aria-label="twtrubiks">
+
+        <a class="avatar" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=16622269" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/twtrubiks" aria-describedby="hovercard-aria-description">
+          <img height="20" width="20" alt="@twtrubiks" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/16622269">
+</a>  </div>
+</div>
+
+    <div class="flex-auto f6 mr-3">
+      
+      <a href="https://github.com/twtrubiks/Git-Tutorials/commits?author=twtrubiks" class="commit-author tooltipped tooltipped-s user-mention" aria-label="View all commits by twtrubiks">twtrubiks</a>
+
+
+  
+
+
+        <a data-pjax="true" title="git remote and git branch rename tutorial" class="message" href="https://github.com/twtrubiks/Git-Tutorials/commit/21c0f47e37152065d4a76edb283be7d45d8610f2">git remote and git branch rename tutorial</a>
+
+    </div>
+    <div class="no-wrap">
+      Latest commit
+      <a class="commit-tease-sha" href="https://github.com/twtrubiks/Git-Tutorials/commit/21c0f47e37152065d4a76edb283be7d45d8610f2" data-pjax="">
+        21c0f47
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2018-09-20T04:39:24Z" title="2018年9月20日 下午12:39 [GMT+8]">9 days ago</relative-time></span>
+    </div>
+  </div>
+
+
+
+<div class="file-wrap">
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="https://github.com/twtrubiks/Git-Tutorials/tree/21c0f47e37152065d4a76edb283be7d45d8610f2">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax="">
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item navigation-focus" aria-selected="true">
+          <td class="icon">
+            <svg class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="Git-Flow" id="ff1a7df4c8119a46a049cbc87da3d9cc-302be931ccba285c9b00cdb295fbd4759be094c4" href="https://github.com/twtrubiks/Git-Tutorials/tree/master/Git-Flow">Git-Flow</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="add git-flow tutorial" class="message" href="https://github.com/twtrubiks/Git-Tutorials/commit/1fa06ff2370a5ae6bc67f26e6267205b3479b362">add git-flow tutorial</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-08-25T11:01:41Z" title="2018年8月25日 下午7:01 [GMT+8]">a month ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="LICENSE" id="9879d6db96fd29134fc802214163b95a-853b46db127831eb9f8e8a7a8576e41c98619be4" itemprop="license" href="https://github.com/twtrubiks/Git-Tutorials/blob/master/LICENSE">LICENSE</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Initial commit" class="message" href="https://github.com/twtrubiks/Git-Tutorials/commit/0a2ae72a4e06ee2f1be5828a11ad9431d31c234e">Initial commit</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-07-21T10:04:47Z" title="2016年7月21日 下午6:04 [GMT+8]">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="Multiple_SSH_Keys_settings.md" id="15de0a8e875431139c204f80a79bc15d-b1622afa4e400751923ca4e824a8ec290201352d" href="https://github.com/twtrubiks/Git-Tutorials/blob/master/Multiple_SSH_Keys_settings.md">Multiple_SSH_Keys_settings.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="add Multiple_SSH_Keys_settings.md" class="message" href="https://github.com/twtrubiks/Git-Tutorials/commit/a2f3a1f9a55184c8280c770d43fef1a6ccfae799">add Multiple_SSH_Keys_settings.md</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-04-30T07:25:08Z" title="2018年4月30日 下午3:25 [GMT+8]">5 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="README.md" id="04c6e90faac2675aa89e2176d2eec7d8-39a2a36dbe8114b6f9ae870730d8142f5d891900" href="https://github.com/twtrubiks/Git-Tutorials/blob/master/README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="git remote and git branch rename tutorial" class="message" href="https://github.com/twtrubiks/Git-Tutorials/commit/21c0f47e37152065d4a76edb283be7d45d8610f2">git remote and git branch rename tutorial</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-09-20T04:39:24Z" title="2018年9月20日 下午12:39 [GMT+8]">9 days ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="git_submodule_turorial.md" id="6623690dd219729415116c518504b219-d150c68d79f3889db1a04cf2c8b66df042bae279" href="https://github.com/twtrubiks/Git-Tutorials/blob/master/git_submodule_turorial.md">git_submodule_turorial.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="typo fixed" class="message" href="https://github.com/twtrubiks/Git-Tutorials/commit/796692638b3516883bd8ae7a70369b2f55aa654f">typo fixed</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-09-04T14:24:19Z" title="2018年9月4日 下午10:24 [GMT+8]">25 days ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="git_subtree_turorial.md" id="4ae8b1b097a8195918dbeaf29698e74d-259e1205c6397d20eae551c2c52071c93c6a9f4d" href="https://github.com/twtrubiks/Git-Tutorials/blob/master/git_subtree_turorial.md">git_subtree_turorial.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="add git subtree tutorial" class="message" href="https://github.com/twtrubiks/Git-Tutorials/commit/214105418f7a02a2833faa0187a92d6ddace31c6">add git subtree tutorial</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-09-16T05:56:42Z" title="2018年9月16日 下午1:56 [GMT+8]">13 days ago</time-ago></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+  <div id="readme" class="Box Box--condensed instapaper_body md">
+    <div class="Box-header px-2 clearfix">
+      <h3 class="Box-title pr-3">
+        <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+        README.md
+      </h3>
+    </div>
+      <div class="Box-body p-6">
+        <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-git-tutorials-基本使用教學--memo" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-tutorials-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8--memo"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Git-Tutorials 基本使用教學  <g-emoji class="g-emoji" alias="memo" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png"><img class="emoji" alt="memo" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f4dd.png"></g-emoji></h1>
+<p>因為小弟覺得這東西蠻有趣的，所以就簡單寫個教學文，順便記錄一下<g-emoji class="g-emoji" alias="memo" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png"><img class="emoji" alt="memo" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f4dd.png"></g-emoji>，希望能幫助想學的人<g-emoji class="g-emoji" alias="smile" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png"><img class="emoji" alt="smile" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f604.png"></g-emoji></p>
+<p>如果教學有誤再請糾正<g-emoji class="g-emoji" alias="sweat_smile" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f605.png"><img class="emoji" alt="sweat_smile" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f605.png"></g-emoji></p>
+<p>基本使用指令以及安裝可參考小弟之前拍的影片 <a href="https://www.youtube.com/watch?v=py3n6gF5Y00" rel="nofollow">github基本教學 - 從無到有</a></p>
+<p>影片教學包含如何產生 <strong>SSH key</strong></p>
+<p>如果步驟正確且沒出錯誤，可以在路徑下找到 <strong>.ssh資料夾</strong>，裡面有 <strong>id_rsa</strong> 以及 <strong>id_rsa.pub</strong> 兩個檔案，</p>
+<p>這兩個就是 SSH Key， <strong>id_rsa是私鑰</strong> ，不能洩露出去， <strong>id_rsa.pub是公鑰</strong> ，可以很放心的告訴任何人。</p>
+<p>安裝完 Git 之後，要做的第一件事情就是去設定自己的名字和信箱</p>
+<div class="highlight highlight-source-batchfile"><pre>git config --global user.name <span class="pl-s"><span class="pl-pds">"</span>twtrubiks<span class="pl-pds">"</span></span>
+git config --global user.email <span class="pl-s"><span class="pl-pds">"</span>twtrubiks@gmail.com<span class="pl-pds">"</span></span></pre></div>
+<p>可以輸入以下來確認是否輸入成功</p>
+<div class="highlight highlight-source-batchfile"><pre>git config --global user.name
+git config --global user.email</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f356d705337496a2e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f356d705337496a2e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/5mpS7Ij.jpg" style="max-width:100%;"></a></p>
+<p>Git 設定資料查看，可執行以下指令 ( 文章末會有較詳細的教學 )：</p>
+<div class="highlight highlight-source-batchfile"><pre>git config --list</pre></div>
+<h2><a id="user-content-git-init-指令" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-init-%E6%8C%87%E4%BB%A4"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git init 指令</h2>
+<p>初始化 git</p>
+<div class="highlight highlight-source-batchfile"><pre>git init</pre></div>
+<p>也可以指定資料夾</p>
+<div class="highlight highlight-source-batchfile"><pre>git init <span class="pl-k">&lt;</span>directory<span class="pl-k">&gt;</span></pre></div>
+<h2><a id="user-content-git-clone-指令" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-clone-%E6%8C%87%E4%BB%A4"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git clone 指令</h2>
+<p>複製如圖位置網址 ( 不要複製我的哦~ 複製你自己的 )
+<a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f454a354a4e6a742e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f454a354a4e6a742e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/EJ5JNjt.jpg" style="max-width:100%;"></a></p>
+<p>git clone ( 複製的網址 ) SSH / HTTPS</p>
+<div class="highlight highlight-source-batchfile"><pre>git clone git<span class="pl-k">@</span>github.com:twtrubiks/test.git</pre></div>
+<p>第一次會出現 SSH 警告，選 YES 即可。</p>
+<p>如圖 ( 下載成功 )，在你的下載路徑下就會多出一個資料夾
+<a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f69496b546c71662e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f69496b546c71662e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/iIkTlqf.jpg" style="max-width:100%;"></a></p>
+<h2><a id="user-content-git-status-指令" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-status-%E6%8C%87%E4%BB%A4"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git status 指令</h2>
+<div class="highlight highlight-source-batchfile"><pre>git status</pre></div>
+<p>可以讓我們觀看目前的 repository ( repo 容器 )。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f354774393856682e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f354774393856682e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/5Gt98Vh.jpg" style="max-width:100%;"></a></p>
+<p>意思是目前你的工作區是乾淨的。</p>
+<h2><a id="user-content-工作區與暫存區--stage-" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#%E5%B7%A5%E4%BD%9C%E5%8D%80%E8%88%87%E6%9A%AB%E5%AD%98%E5%8D%80--stage-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>工作區與暫存區 ( Stage )</h2>
+<p>git add 意思是把要送出的文件放到暫存區 ( Stage ) ，</p>
+<p>然後執行</p>
+<p>git commit 就可以把暫存區 ( Stage ) 裡所有修改的內容送到目前的分支上。</p>
+<p>一旦送出 ( git commit ) 後，如果你又沒有對工作區做任何修改，那麼工作區就是"乾淨"的。</p>
+<p>git commit -m "xxxxx" 指令，-m 後面輸入的內容是本次修改 ( 送出 ) 的說明，</p>
+<p>盡量輸入一眼就可以看出這次送出修改了什麼的內容
+( 方便以後回去觀看能快速了解此次 commit 修改了什麼 )。</p>
+<p>以下 demo 為在一個資料夾內新增一個 Hello.py 檔案</p>
+<p>然後使用 git status 觀看目前的 repository ( repo 容器 )，你會看到 Hello.py 未被追蹤，如下圖</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f64766a314451682e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f64766a314451682e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/dvj1DQh.jpg" style="max-width:100%;"></a></p>
+<p>可以使用如下指令</p>
+<div class="highlight highlight-source-batchfile"><pre>git add Hello.py</pre></div>
+<p>額外補充，下面這個指令很有趣，大家可以玩玩看</p>
+<div class="highlight highlight-source-batchfile"><pre>git add -p</pre></div>
+<p>接著再使用</p>
+<p>git commit -m "文字"</p>
+<div class="highlight highlight-source-batchfile"><pre>git commit -m <span class="pl-s"><span class="pl-pds">"</span>add Hello.py<span class="pl-pds">"</span></span></pre></div>
+<p>再使用 git status，你會發現工作區變乾淨了。如下圖</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f36567269654e622e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f36567269654e622e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/6VrieNb.jpg" style="max-width:100%;"></a></p>
+<p>補充，如果只有輸入</p>
+<div class="highlight highlight-source-batchfile"><pre>git commit</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f795a784b4754552e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f795a784b4754552e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/yZxKGTU.jpg" style="max-width:100%;"></a></p>
+<p>這時會跳出編輯視窗</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f68744e5130644a2e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f68744e5130644a2e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/htNQ0dJ.jpg" style="max-width:100%;"></a></p>
+<p>這時可以按鍵盤的 <strong>Ins鍵</strong> ( 或按鍵盤上的 <strong>英文字 i</strong> ) 即可輸入文字</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4e4679313664702e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4e4679313664702e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/NFy16dp.jpg" style="max-width:100%;"></a></p>
+<p>輸入完先按 <strong>Esc鍵</strong> ，按完後底下的 INSERT 會消失，接著直接打 <strong>:wq</strong> ，再按 enter 就會儲存並離開了。</p>
+<p>更多參數可參考 <a href="https://git-scm.com/docs/git-commit" rel="nofollow">https://git-scm.com/docs/git-commit</a> 說明。</p>
+<p><strong>如何修改最後一次的commit呢 ?</strong></p>
+<p>有時候我們 commit 完之後，才發現自己的 commit 內容手殘打錯了</p>
+<p>這時候可以使用如下指令，他會跳出編輯視窗給你編輯你上一次的 commit 內容。</p>
+<div class="highlight highlight-source-batchfile"><pre>git commit --amend</pre></div>
+<p>又或是我們 commit 完之後，才發現自己漏了幾個檔案沒有 add 進去</p>
+<p>這時候可以使用如下指令</p>
+<div class="highlight highlight-source-batchfile"><pre>git commit -m <span class="pl-s"><span class="pl-pds">"</span>init commit<span class="pl-pds">"</span></span>
+git add missing_file.py
+git commit --amend</pre></div>
+<p>如上狀況為當我 git commit -m "init commit" 之後，</p>
+<p>我發現我漏掉了 <strong>missing_file.py</strong> 這個檔案 ( commit 前忘記 add 進去 ) ，</p>
+<p>這時候就可以使用 git commit --amend 來修改最後一次的 commit 。</p>
+<p>有時候我們會為了方便，直接使用下面的指令一次加入全部的檔案</p>
+<div class="highlight highlight-source-batchfile"><pre>git add .</pre></div>
+<p>但是加完後發現其實有些檔案是不需要 add 進入的，這時候就可以使用如下指令去取消 add</p>
+<div class="highlight highlight-source-batchfile"><pre>git reset HEAD <span class="pl-k">&lt;</span>file<span class="pl-k">&gt;</span></pre></div>
+<p>範例，路徑下有 A.py 以及 B.py 這兩個檔案，然後我使用 <strong>git add .</strong> 加入，
+<a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f305337546345422e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f305337546345422e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/0S7TcEB.jpg" style="max-width:100%;"></a></p>
+<p>但加入完我發現其實 B.py 我還沒有要 add 進入，所以我這時候就可以使用 <strong>git reset HEAD B.py</strong> 去還原。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f336941794545782e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f336941794545782e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/3iAyEEx.jpg" style="max-width:100%;"></a></p>
+<h2><a id="user-content-git-push-指令" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-push-%E6%8C%87%E4%BB%A4"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git push 指令</h2>
+<div class="highlight highlight-source-batchfile"><pre>git push</pre></div>
+<p>將程式 push 到 github ( or bitbucket 之類 )上 , 如下圖</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f643631506175362e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f643631506175362e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/d61Pau6.jpg" style="max-width:100%;"></a></p>
+<h2><a id="user-content-版本控制---歷史記錄" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6---%E6%AD%B7%E5%8F%B2%E8%A8%98%E9%8C%84"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>版本控制 - 歷史記錄</h2>
+<div class="highlight highlight-source-batchfile"><pre>git log</pre></div>
+<p>按 <strong>小寫q</strong> 可退出</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6a3131616643502e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6a3131616643502e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/j11afCP.jpg" style="max-width:100%;"></a></p>
+<p>如果覺得版面太雜，可以使用下列指令</p>
+<div class="highlight highlight-source-batchfile"><pre>git log --pretty=oneline</pre></div>
+<p>按 <strong>小寫q</strong> 可退出</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6a7a32637755412e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6a7a32637755412e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/jz2cwUA.jpg" style="max-width:100%;"></a></p>
+<p>另外底下也是一個看 log 的方式（ 很酷 <g-emoji class="g-emoji" alias="laughing" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f606.png"><img class="emoji" alt="laughing" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f606.png"></g-emoji>），有 GUI 的感覺（ 來源為文章最後的連結 ）</p>
+<div class="highlight highlight-source-batchfile"><pre>git log --graph --pretty=format:<span class="pl-s"><span class="pl-pds">"</span><span class="pl-smi">%Cred%</span>h<span class="pl-smi">%Creset -%</span>C(yellow)<span class="pl-smi">%d%</span>Creset <span class="pl-smi">%s %</span>Cgreen(<span class="pl-smi">%cr) %</span>C(bold blue)&lt;<span class="pl-smi">%an&gt;%</span>Creset<span class="pl-pds">"</span></span> --abbrev-commit --date=relative</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f584e51697375662e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f584e51697375662e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/XNQisuf.png" style="max-width:100%;"></a></p>
+<p>Git 中，使用 HEAD 表示目前的版本，</p>
+<div class="highlight highlight-source-batchfile"><pre>git reset --hard HEAD</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f706b464f38706b2e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f706b464f38706b2e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/pkFO8pk.jpg" style="max-width:100%;"></a></p>
+<p>如果現在要把目前版本退回到上一個版本，就可以使用 git reset 指令：</p>
+<p>上一個版本就是HEAD~1，</p>
+<div class="highlight highlight-source-batchfile"><pre>git reset --hard HEAD~1</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f5a54686f6155542e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f5a54686f6155542e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/ZThoaUT.jpg" style="max-width:100%;"></a></p>
+<p>上上一個版本就是HEAD~2，</p>
+<p>如果要指定回到某個特定版本：</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4b72434f4337312e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4b72434f4337312e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/KrCOC71.jpg" style="max-width:100%;"></a></p>
+<div class="highlight highlight-source-batchfile"><pre>git reset --hard ad41df36b7</pre></div>
+<p><code>--hard</code> 這個參數，有三種選擇，分別為 <code>--mixed</code>( default ）<code>--hard</code> <code>--soft</code>，</p>
+<p><code>--hard</code> 這個參數簡單解釋就是將之前的 commit 都丟掉（ 完全 <strong>不保留</strong> ）。</p>
+<p><code>--soft</code> 這個參數簡單解釋就是將之前的 commit 都丟掉，但 <strong>保留</strong> 你之前工作區的狀態。</p>
+<p><code>--hard</code> 和 <code>--soft</code> 這兩個我覺得用文字不好說明，我建議大家自己可以動手玩玩看，就可以了解他們之間的差異。</p>
+<p><code>--soft</code> 很適合使用在將多個無意義的 commit 合併成一個 commit。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f3652567574694b2e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f3652567574694b2e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/6RVutiK.jpg" style="max-width:100%;"></a></p>
+<p>版本號 ( ad41df36b7 ) 沒必要全部都寫，寫前幾位就可以了，Git 會自動去找。</p>
+<p>當你退回到某個版本，突然隔天後悔了，想恢復到之前的新版本該怎麼做呢?</p>
+<p>找不到新版本的 commit id 該怎麼辦呢?</p>
+<p>這時候就可以使用一個指令</p>
+<div class="highlight highlight-source-batchfile"><pre>git reflog</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4d61526c5a5a722e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4d61526c5a5a722e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/MaRlZZr.jpg" style="max-width:100%;"></a></p>
+<p>接著看你要回到哪個版本，再使用 git reset 即可。</p>
+<div class="highlight highlight-source-batchfile"><pre>git reset --hard 642e7af</pre></div>
+<p>有時候想消除( 覆蓋 )已經 push 出去的 commit，這時候我們可以使用</p>
+<div class="highlight highlight-source-batchfile"><pre>git push --force</pre></div>
+<p>或是更簡短的寫法</p>
+<div class="highlight highlight-source-batchfile"><pre>git push -f</pre></div>
+<p>可以強制 push。先回到某個版本，然後再強制 push。</p>
+<p><em><strong>注意！在多人專案共同開發時，盡量不要用 --force 這種方法，因為有時候會害到別人，建議可以使用 revert 。</strong></em></p>
+<p>因為上面這個原因，所以建議用另一種比較安全的方式</p>
+<div class="highlight highlight-source-batchfile"><pre>git push --force-with-lease</pre></div>
+<p>可以確保你沒有隨便丟掉別人的 commit。（ 如果有人比你早 commit push 上去，你就會無法 push 到 remote ）</p>
+<h2><a id="user-content-checkout" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#checkout"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>checkout</h2>
+<p>git checkout -- file 可以丟棄工作區的修改：</p>
+<div class="highlight highlight-source-batchfile"><pre>git checkout  -- hello.py</pre></div>
+<p>命令 git checkout -- hello.py 意思就是，把 hello.py 文件在工作區的修改全部撤銷 ( 丟棄 ) ，</p>
+<p>讓這個檔案回到最近一次 git commit 或 git add 時的狀態。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f5372436f346b482e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f5372436f346b482e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/SrCo4kH.jpg" style="max-width:100%;"></a></p>
+<p>當然也可以用 git reset 指令直接回到某個 commit。</p>
+<div class="highlight highlight-source-batchfile"><pre>git reset --hard xxxxxx</pre></div>
+<div class="highlight highlight-source-batchfile"><pre>git reset --hard 201f40604ec3b6fa8</pre></div>
+<h2><a id="user-content-刪除" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#%E5%88%AA%E9%99%A4"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>刪除</h2>
+<p>有兩種況狀，一種是確定要從版本庫中刪除該檔案，那就用命令 git rm 刪掉，並且 git commit：</p>
+<div class="highlight highlight-source-batchfile"><pre>rm hello.py
+git rm hello.py
+git commit -m <span class="pl-s"><span class="pl-pds">"</span>remove hello.py<span class="pl-pds">"</span></span></pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f734c4d544458372e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f734c4d544458372e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/sLMTDX7.jpg" style="max-width:100%;"></a></p>
+<p>另一種況狀是刪錯了，使用 git checkout 可以輕鬆還原檔案:</p>
+<div class="highlight highlight-source-batchfile"><pre>rm hello.py
+git checkout -- hello.py</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f3558324e6366532e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f3558324e6366532e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/5X2NcfS.jpg" style="max-width:100%;"></a></p>
+<h2><a id="user-content-新建與-合併--merge--分支-branch" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#%E6%96%B0%E5%BB%BA%E8%88%87-%E5%90%88%E4%BD%B5--merge--%E5%88%86%E6%94%AF-branch"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>新建與 合併 ( merge ) 分支 branch</h2>
+<p>在說明分支 branch 之前，先給大家一個觀念。</p>
+<p>通常開發的時候，大家都是從 <strong>master</strong> 做一個分支 branch 出去，最後再 <strong>merge</strong> 回 master，</p>
+<p>為什麼要這麼做呢 ?  因為要確保大家都是使用最新的 <strong>master</strong></p>
+<p>使用 git branch 指令查看目前的分支：</p>
+<div class="highlight highlight-source-batchfile"><pre>git branch</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f5356626c5844322e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f5356626c5844322e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/SVblXD2.jpg" style="max-width:100%;"></a></p>
+<p>首先創建一個分支，bug1 分支 ( 名稱可以隨便取 )，然後切換到 bug1 分支：</p>
+<div class="highlight highlight-source-batchfile"><pre>git branch bug1
+git checkout bug1</pre></div>
+<p>git branch bug1 為創造一個名稱為 bug1 的分支，</p>
+<p>git checkout bug1 為切換到一個名稱為 bug1 的分支底下。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4a744742486b342e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4a744742486b342e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/JtGBHk4.jpg" style="max-width:100%;"></a></p>
+<p>以上兩行指令，相當於下列一行指令</p>
+<div class="highlight highlight-source-batchfile"><pre>git checkout -b bug1</pre></div>
+<p>我們在 bug1 分支上進行任何修改操作，</p>
+<p>然後再把工作成果 ( 補充一下，修改任何內容後請記得使用 git add 指令和 git commit 指令 ) 合併到 master 分支上：</p>
+<div class="highlight highlight-source-batchfile"><pre>git checkout master
+git merge bug1</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f704634784455452e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f704634784455452e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/pF4xDUE.jpg" style="max-width:100%;"></a></p>
+<p>git checkout master 為切換到一個名稱為 master 的分支底下。</p>
+<p>git merge bug1 指令用於合併 ( bug1分支 ) 指定分支到目前分支 ( master ) 底下。</p>
+<p>如果非常順利， git merge 的訊息裡會出現 Fast-forward，合併速度非常快。</p>
+<p>當然不是每次合併都能很順利的出現 Fast-forward，很多時候會出現衝突 CONFLICT 。</p>
+<p>如果順利合併 ( merge ) 完成後，就可以刪除 bug1 分支：</p>
+<div class="highlight highlight-source-batchfile"><pre>git branch -d dev</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4c6d4b4b5778522e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4c6d4b4b5778522e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/LmKKWxR.jpg" style="max-width:100%;"></a></p>
+<p>如果要丟掉一個沒有被合併過的分支，可以使用 git branch -D 分支名稱  強行刪除。</p>
+<div class="highlight highlight-source-batchfile"><pre>git branch -D dev</pre></div>
+<p>補充，git branch 也可以修改名稱，而且 commit id 是不會改變的，使用方法也很簡單，</p>
+<p>可參考 git-branch <a href="https://git-scm.com/docs/git-branch#git-branch--m" rel="nofollow">文件</a>，使用方法如下，</p>
+<pre lang="text"><code>git branch -m &lt;name&gt;
+</code></pre>
+<p>原本的 b1 branch 分支的 log 如下，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f62314b314555792e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f62314b314555792e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/b1K1EUy.png" style="max-width:100%;"></a></p>
+<p>現在將 b1 branch 修改成 b2 branch，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f54777a356b526d2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f54777a356b526d2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/Twz5kRm.png" style="max-width:100%;"></a></p>
+<p>如果你仔細和剛剛的 log 比較，你會發現 log 的 commit id 是不會改變的，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f714d6a7156335a2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f714d6a7156335a2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/qMjqV3Z.png" style="max-width:100%;"></a></p>
+<h2><a id="user-content-新建分支-branch-並-push" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#%E6%96%B0%E5%BB%BA%E5%88%86%E6%94%AF-branch-%E4%B8%A6-push"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>新建分支 branch 並 push</h2>
+<p>相信大家有時候在 github 上面都會看到，如下圖，很多分支</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f777249646c7a532e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f777249646c7a532e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/wrIdlzS.jpg" style="max-width:100%;"></a></p>
+<p>那我們要如何建立分支呢? 首先，我們先看下面這張圖</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f335530393261312e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f335530393261312e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/3U092a1.jpg" style="max-width:100%;"></a></p>
+<p>有一個 v1 的分支，並且我在分支上增加一個 g.py 並且 commit。</p>
+<p>接下來要 <strong>第一次</strong> git push 的時候， 你會發現有錯誤提示</p>
+<p>請使用以下指令才是正確的</p>
+<div class="highlight highlight-source-batchfile"><pre>git push --set-upstream origin v1</pre></div>
+<p>也可以使用</p>
+<div class="highlight highlight-source-batchfile"><pre>git push -u origin v1</pre></div>
+<p>更多詳細說明可參考 <a href="https://git-scm.com/docs/git-push#git-push--u" rel="nofollow">https://git-scm.com/docs/git-push#git-push--u</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f316675533256592e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f316675533256592e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/1fuS2VY.jpg" style="max-width:100%;"></a></p>
+<p>接下來你可以到網頁上看 ( 這裡用 bitbucket 當作範例 ) ，你會發現有分支 v1 了</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6c4f747a736b382e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6c4f747a736b382e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/lOtzsk8.jpg" style="max-width:100%;"></a></p>
+<p>如果是第一次使用 git clone ，你會發現你只有 master 分支 ，</p>
+<p>這時候我們先查看遠端還有什麼分支，</p>
+<div class="highlight highlight-source-batchfile"><pre>git branch -r</pre></div>
+<p>假設遠端有一個名稱為 develop 的分支，</p>
+<p>我們只要 checkout 到該分支底下就可以了</p>
+<div class="highlight highlight-source-batchfile"><pre>git checkout develop</pre></div>
+<h2><a id="user-content-git-pull" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-pull"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git pull</h2>
+<p>通常在開始工作或要 push 之前，會先從遠端抓取分支，</p>
+<div class="highlight highlight-source-batchfile"><pre>git pull</pre></div>
+<p>如果有衝突，要先解衝突。</p>
+<h2><a id="user-content-git-fetch" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-fetch"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git fetch</h2>
+<p>可以先簡單想成 <strong>git pull = git fetch + git merge</strong></p>
+<p>我們先來看下面這張圖，  <strong>git fetch + git merge</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f434f75574279772e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f434f75574279772e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/COuWByw.png" style="max-width:100%;"></a></p>
+<p>再看這張圖  <strong>git pull</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f384647754137352e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f384647754137352e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/8FGuA75.png" style="max-width:100%;"></a></p>
+<p>這樣是不是清楚多了!!!</p>
+<h2><a id="user-content-git-rebase" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-rebase"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git rebase</h2>
+<p>什麼是 rebase 呢 ? git rebase 就是避免多餘 ( 沒有意義 ) 的 merge !!! 先看看下面兩張圖</p>
+<p>補充 :</p>
+<p>ck = checkout</p>
+<p>br = branch</p>
+<p>st = status</p>
+<p>cm = commit</p>
+<p>可以自行設定。</p>
+<p>圖一</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6d57593066324a2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6d57593066324a2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/mWY0f2J.png" style="max-width:100%;"></a></p>
+<p>圖二</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f51565a633550352e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f51565a633550352e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/QVZc5P5.png" style="max-width:100%;"></a></p>
+<p>圖一 和 圖二 你喜歡看哪種圖 ?  答案很明顯，是 圖一 !!</p>
+<p><strong>rebase</strong> 的目的主要就是盡量讓圖都像 圖一</p>
+<p>用講的大家一定霧煞煞，所以我直接實戰給大家看。</p>
+<p>先示範 <strong>沒有使用 rebase</strong> 的範例</p>
+<p>目前分支</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f45306168666e442e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f45306168666e442e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/E0ahfnD.png" style="max-width:100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4c6234644230562e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4c6234644230562e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/Lb4dB0V.png" style="max-width:100%;"></a></p>
+<p>以上說明 : 先建立 v1 branch，接著 add 後再 commit。</p>
+<p>假設現在又有人 push 了，以下模擬 pull ，自己加上一個 commit</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f68464b5834794a2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f68464b5834794a2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/hFKX4yJ.png" style="max-width:100%;"></a></p>
+<p>以上說明 : 自己在 master 分支上加 t2.txt ， 並且commit ( 模擬 pull )</p>
+<p>接下來，切換到 master 分支下和 v1 branch 分支 合併，並且 push</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f307343483251312e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f307343483251312e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/0sCH2Q1.png" style="max-width:100%;"></a></p>
+<p>你會發現，顯示出來的圖並不漂亮，如下圖</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f7a6249506479622e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f7a6249506479622e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/zbIPdyb.png" style="max-width:100%;"></a></p>
+<p>示範 <strong>使用 rebase</strong> 的範例</p>
+<p>前面的部份基本上一樣</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f45306168666e442e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f45306168666e442e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/E0ahfnD.png" style="max-width:100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4c6234644230562e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4c6234644230562e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/Lb4dB0V.png" style="max-width:100%;"></a></p>
+<p>以上說明 : 先建立 v1 branch，接著 add 後再 commit。</p>
+<p>假設現在又有人 push 了，以下模擬 pull ，自己加上一個 commit</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f68464b5834794a2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f68464b5834794a2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/hFKX4yJ.png" style="max-width:100%;"></a></p>
+<p>以上說明 : 自己在 master 分支上加 t2.txt ， 並且 commit ( 模擬 pull )</p>
+<p><em><strong>差異的部份</strong></em></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f34355a5847694b2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f34355a5847694b2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/45ZXGiK.png" style="max-width:100%;"></a></p>
+<p>以上說明 : 先切換到 v1 分支，然後使用以下指令</p>
+<div class="highlight highlight-source-batchfile"><pre>git rebase master</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4c7064394b6a722e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4c7064394b6a722e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/Lpd9Kjr.png" style="max-width:100%;"></a></p>
+<p>以上說明 : 再切回 master 分支，並且使用 merge 合併 v1 分支，最後在 push</p>
+<p>你看~  是不是變的整齊又漂亮多了呢?</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f316a42493770772e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f316a42493770772e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/1jBI7pw.png" style="max-width:100%;"></a></p>
+<p>git rebase  就是將 master 的最新 commit 接回來，再補上自己分支的 commit。</p>
+<p>以上就是 git rebase  的介紹。</p>
+<h2><a id="user-content-git-rebase-interactive" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-rebase-interactive"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git rebase interactive</h2>
+<p>小弟我當初年輕，一直以為 <code>git rebase</code> 就只是讓 commit log 看起來比較乾淨而已，結果無意間發現，</p>
+<p><code>git rebase</code> 的 interactive 超強，所以，這邊就來介紹 <code>git rebase</code> 的強大功能 <g-emoji class="g-emoji" alias="smirk" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60f.png"><img class="emoji" alt="smirk" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f60f.png"></g-emoji></p>
+<p>以下是 git rebase interactive 可以使用的指令，這些說明是我從 git 中複製出來的，等等會顯示給大家看，</p>
+<div class="highlight highlight-source-batchfile"><pre># Commands:
+# p, pick = use commit
+# r, reword = use commit, but <span class="pl-k">edit</span> the commit message
+# e, <span class="pl-k">edit</span> = use commit, but stop <span class="pl-k">for</span> amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like <span class="pl-s"><span class="pl-pds">"</span>squash<span class="pl-pds">"</span></span>, but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit</pre></div>
+<p>如果大家想要更進一步的了解，請參考 <a href="https://git-scm.com/docs/git-rebase#_interactive_mode" rel="nofollow">INTERACTIVE MODE</a>，</p>
+<p>pick 沒什麼好講的，就使用這個 commit 而已<g-emoji class="g-emoji" alias="smile" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png"><img class="emoji" alt="smile" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f604.png"></g-emoji></p>
+<h3><a id="user-content-reword" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#reword"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>reword</h3>
+<p><a href="https://youtu.be/JhY0rR2wQq0" rel="nofollow">Youtube Tutorial - git rebase interactive - reword - PART 1</a></p>
+<div class="highlight highlight-source-batchfile"><pre># Commands:
+# p, pick = use commit
+# r, reword = use commit, but <span class="pl-k">edit</span> the commit message</pre></div>
+<p>以下為官方的說明</p>
+<pre lang="txt"><code>If you just want to edit the commit message for a commit, replace the command "pick" with the command "reword".
+</code></pre>
+<p>說明已經很清楚了，就是可以編輯 commit message。</p>
+<p>( 不能修改 commit 內容，也就是 files 內容 )</p>
+<p>假設，現在我們有一個 git log 是這樣，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f3662576e4a6e4b2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f3662576e4a6e4b2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/6bWnJnK.png" style="max-width:100%;"></a></p>
+<p>commit id 2659f65 有 Typo，正確的 commit message 應該是  add c.py 才對，</p>
+<p>所以現在要修正他，我們的目標 commit id 為 2659f65，指令為</p>
+<div class="highlight highlight-source-batchfile"><pre>git rebase -i <span class="pl-k">&lt;</span>after-this-commit<span class="pl-k">&gt;</span></pre></div>
+<p>after-this-commit 這個是什麼意思<g-emoji class="g-emoji" alias="question" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2753.png"><img class="emoji" alt="question" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/2753.png"></g-emoji></p>
+<p>簡單說，就是要選當下的 commit id 的上一個，</p>
+<p>以這個例子來說，我們的目標 commit id 為 2659f65，但指令我們必須下</p>
+<div class="highlight highlight-source-batchfile"><pre>git rebase -i f0a761d</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6431356e476a782e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6431356e476a782e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/d15nGjx.png" style="max-width:100%;"></a></p>
+<p>這樣應該就很清楚了，總之，記得要選擇目標 commit id 的上一個就對了。</p>
+<p>當你按下 ENTER 之後，你應該會看到下圖</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f344953476357312e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f344953476357312e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/4ISGcW1.png" style="max-width:100%;"></a></p>
+<p>A 的部份就是我們要修改的目標，B 的部分就是說明 ( 前面貼給大家看的東西 )，</p>
+<p>接著，按 i 進入編輯模式，然後將目標改成 r 或是 reword 都可以，接著輸入 <code>:wq</code></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f7a5065487544612e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f7a5065487544612e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/zPeHuDa.png" style="max-width:100%;"></a></p>
+<p>接著我們再按下 ENTER，會再跳出一次畫面，這時候，你就將 commit 訊息修改成</p>
+<p>正確的，將  add c.py Typo 修改為 add c.py</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f627259624e71792e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f627259624e71792e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/brYbNqy.png" style="max-width:100%;"></a></p>
+<p>輸入 <code>:wq</code> 之後，再 ENTER ( 完成 )</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6b69744b71726d2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6b69744b71726d2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/kitKqrm.png" style="max-width:100%;"></a></p>
+<p>我們再用 log 確認一下( 如下圖 )，的確修改成功了，成功將訊息修改為 add c.py，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f72576f6a4749752e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f72576f6a4749752e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/rWojGIu.png" style="max-width:100%;"></a></p>
+<p>這邊有個地方要和大家提一下，就是 commit id 會改變，我把改變的地方框出來給各位看，</p>
+<p>修改前</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f366936577633352e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f366936577633352e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/6i6Wv35.png" style="max-width:100%;"></a></p>
+<p>修改後</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6d766a393655322e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6d766a393655322e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/mvj96U2.png" style="max-width:100%;"></a></p>
+<p>簡單來說，就是目前 commit id 之後的 commit id 都會改變 ( 有點繞口 <g-emoji class="g-emoji" alias="sweat_smile" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f605.png"><img class="emoji" alt="sweat_smile" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f605.png"></g-emoji> )</p>
+<p>這邊補充一下，只要你用了 rebase，就會看到類似下面的圖，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f696944663434712e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f696944663434712e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/iiDf44q.png" style="max-width:100%;"></a></p>
+<p>origin/master 就是指遠端 ( romote ) 的 repo，它是和你說你現在的 repo 已經和 origin/master</p>
+<p>不一樣了，所以，這時候你如果要 push，請使用 <code>git push --force-with-lease</code>。</p>
+<p>這邊可能有人會問，如果我希望修改第一個 commit 該怎麼辦 <g-emoji class="g-emoji" alias="question" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2753.png"><img class="emoji" alt="question" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/2753.png"></g-emoji></p>
+<p>這時候可以使用，</p>
+<div class="highlight highlight-source-batchfile"><pre>git rebase -i --root</pre></div>
+<h3><a id="user-content-edit" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#edit"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>edit</h3>
+<p><a href="https://youtu.be/TCKjQppHxxQ" rel="nofollow">Youtube Tutorial - git rebase interactive - edit - PART 2</a></p>
+<div class="highlight highlight-source-batchfile"><pre># Commands:
+# p, pick = use commit
+# e, <span class="pl-k">edit</span> = use commit, but stop <span class="pl-k">for</span> amending</pre></div>
+<p>以下為官方的說明</p>
+<pre lang="txt"><code>By replacing the command "pick" with the command "edit", you can tell git rebase to stop after applying that commit, so that you can edit the files and/or the commit message, amend the commit, and continue rebasing.
+</code></pre>
+<p>簡單說，reword 只可以修改 commit message，而 edit 不只可以修改 commit message ，還可以修改 files 內容。</p>
+<p>先來看看下面這張圖</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f396a304a6e4b772e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f396a304a6e4b772e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/9j0JnKw.png" style="max-width:100%;"></a></p>
+<p>這圖很明顯 add a.py -&gt; add b.py -&gt; add c.py -&gt; add d.py ，現在我想在 add c.py 和 add d.py 中再加一個東西，</p>
+<p>也就是變成 add a.py -&gt; add b.py -&gt; add c.py -&gt; add c1.py -&gt; add d.py  這樣。</p>
+<p>增加一個  add c1.py 的情境時就可以使用 edit 了，( 以下我就不說那麼詳細了，我直接講重點 )，</p>
+<p>先執行以下指令 ( 我們的目標是 a7ed6ff ，所以選他的上一個 commit id，也就是 f0a761d )</p>
+<div class="highlight highlight-source-batchfile"><pre>git rebase -i f0a761d</pre></div>
+<p>這次我們將 pick 修改成 e 或是 edit ( 如下圖 )</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f624b724c496c332e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f624b724c496c332e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/bKrLIl3.png" style="max-width:100%;"></a></p>
+<p>當你按下 ENTER 之後，你會看到下圖，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f77686b437a6f6b2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f77686b437a6f6b2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/whkCzok.png" style="max-width:100%;"></a></p>
+<p>A 的部份是可以修改 commit message，</p>
+<p>B 的部份則是和你說當你修改 ( 滿足 ) 完畢，可以執行 <code>git rebase --continue</code>，</p>
+<p>A 的部份我們不做了，但我們現在來加工吧 ( 增加 c1.py )，</p>
+<p>首先，我們建立一個 c1.py 檔案，然後 <code>git add c1.py</code>，接著 commit 他 ( 如下圖 )</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f667259425566542e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f667259425566542e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/frYBUfT.png" style="max-width:100%;"></a></p>
+<p>剛剛有說過了，當你滿足時，可執行 <code>git rebase --continue</code>，收工</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f736a6e456e30482e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f736a6e456e30482e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/sjnEn0H.png" style="max-width:100%;"></a></p>
+<p>再用 log 確認一下，太神了 <g-emoji class="g-emoji" alias="laughing" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f606.png"><img class="emoji" alt="laughing" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f606.png"></g-emoji> 成功加上去了</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f69724543774c482e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f69724543774c482e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/irECwLH.png" style="max-width:100%;"></a></p>
+<h3><a id="user-content-squash" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#squash"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>squash</h3>
+<p><a href="https://youtu.be/bfrZrbEHis0" rel="nofollow">Youtube Tutorial - git rebase interactive - squash fixup - PART 3</a></p>
+<div class="highlight highlight-source-batchfile"><pre># Commands:
+# p, pick = use commit
+# s, squash = use commit, but meld into previous commit</pre></div>
+<p>以下為官方的說明</p>
+<pre lang="text"><code> The suggested commit message for the folded commit is the concatenation of the commit messages of the first commit and of those with the "squash" command,
+</code></pre>
+<p>簡單說，你如果想要將多個 commit 合併成一個，使用 squash 就對了，( 以下我就不說那麼詳細了，我直接講重點 )，</p>
+<p>這次的目標是要將 commit id fc45824 以及 commit id a7ed6ff 合併起來 ( 如下圖 )</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f763858774f544e2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f763858774f544e2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/v8XwOTN.png" style="max-width:100%;"></a></p>
+<p>先執行以下指令</p>
+<div class="highlight highlight-source-batchfile"><pre>git rebase -i f0a761d</pre></div>
+<p>接著你會看到下圖，我們將 fc45824 這個 cmmit 的 pick 修改成 s 或 squash</p>
+<p>( 他會合併他的前一個，也就是 a7ed6ff )</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f7267576b7656702e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f7267576b7656702e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/rgWkvVp.png" style="max-width:100%;"></a></p>
+<p>( 如果你要合併多個，就多個都改成 s 或 squash )</p>
+<p>將著按下 ENTER，會看到下圖</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f704236796c6c412e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f704236796c6c412e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/pB6yllA.png" style="max-width:100%;"></a></p>
+<p>這時候他已經合併了這兩個 commit，我們就可以輸入新的 commit message，</p>
+<p>這邊我們輸入 add c.py and c1.py</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6d3945364b55702e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6d3945364b55702e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/m9E6KUp.png" style="max-width:100%;"></a></p>
+<p>再按 ENTER ( 成功 )</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f58304f374935482e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f58304f374935482e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/X0O7I5H.png" style="max-width:100%;"></a></p>
+<p>可以再用 log 確認一下，我們成功將兩個 commit 合併了</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f7235334b4965762e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f7235334b4965762e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/r53KIev.png" style="max-width:100%;"></a></p>
+<p>c.py 以及 c1.py 都存在，代表我們成功了<g-emoji class="g-emoji" alias="laughing" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f606.png"><img class="emoji" alt="laughing" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f606.png"></g-emoji></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f57686b4c4447612e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f57686b4c4447612e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/WhkLDGa.png" style="max-width:100%;"></a></p>
+<h3><a id="user-content-fixup" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#fixup"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>fixup</h3>
+<p><a href="https://youtu.be/bfrZrbEHis0" rel="nofollow">Youtube Tutorial - git rebase interactive - squash fixup - PART 3</a></p>
+<div class="highlight highlight-source-batchfile"><pre># Commands:
+# p, pick = use commit
+# f, fixup = like <span class="pl-s"><span class="pl-pds">"</span>squash<span class="pl-pds">"</span></span>, but discard this commit's log message</pre></div>
+<p>以下為官方的說明</p>
+<pre lang="text"><code>omits the commit messages of commits with the "fixup" command.
+</code></pre>
+<p>其實這個和 squash 很像，通常如果我們要忽略一個 commit message 但保留 commit 的內容，我們就會使用 fixup，</p>
+<p>目標，這邊我們想要移除 fc45824 的個 commit ( 但保留 commit 的內容 )</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f414672643055412e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f414672643055412e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/AFrd0UA.png" style="max-width:100%;"></a></p>
+<p>先執行以下指令</p>
+<div class="highlight highlight-source-batchfile"><pre>git rebase -i f0a761d</pre></div>
+<p>將 fc45824 的 pick 修改成 f 或 fixup ( 如下圖 )</p>
+<p>( 他會移除 fc45824 這個 commit message ，但保留 commit 的內容 )</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6144483179316e2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6144483179316e2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/aDH1y1n.png" style="max-width:100%;"></a></p>
+<p>接著 ENTER，成功 rebase</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f424d73326838722e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f424d73326838722e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/BMs2h8r.png" style="max-width:100%;"></a></p>
+<p>可以再用 log 確認一下，我們忽略了 add c1.py 這個 commit</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6267594a6136542e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6267594a6136542e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/bgYJa6T.png" style="max-width:100%;"></a></p>
+<p>但是 c.py 以及 c1.py 都存在 ( 只忽略 commit message )，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f745972423346392e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f745972423346392e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/tYrB3F9.png" style="max-width:100%;"></a></p>
+<p>看到這裡，大家其實可以想一想 squash 和 fixup 真的非常類似，</p>
+<p>只不過 squash 可以修改 commit message。</p>
+<p>簡單一點，單純想要忽略某一個 commit message 時，使用 fixup，</p>
+<p>想要合併 commit 並修改 commit message 時，使用 squash。</p>
+<h3><a id="user-content-exec" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#exec"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>exec</h3>
+<p><a href="https://youtu.be/u8imRiiSyzk" rel="nofollow">Youtube Tutorial - git rebase interactive - exec drop - PART 4</a></p>
+<div class="highlight highlight-source-batchfile"><pre># Commands:
+# p, pick = use commit
+# x, exec = run command (the rest of the line) using shell</pre></div>
+<p>以下為官方的說明</p>
+<pre lang="text"><code>You may want to check that your history editing did not break anything by running a test, or at least recompiling at intermediate points in history by using the "exec" command (shortcut "x")
+</code></pre>
+<p>這個功能我比較少用，但還是說一下，簡單說，就是他可以用來 check 你的</p>
+<p>rebase 改動是不是影響到整體 ( 用 exec command 確認 )。</p>
+<p>聽不太懂 <g-emoji class="g-emoji" alias="question" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2753.png"><img class="emoji" alt="question" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/2753.png"></g-emoji> 沒關係，假如我今天做了一大堆的 rabase 更動，但我想確認我這樣做了之後，</p>
+<p>對整體是不是有影響，也就是可以在更動時，順便跑你的 test 去確認整體是正常 work。</p>
+<p>還是聽不懂 <g-emoji class="g-emoji" alias="question" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2753.png"><img class="emoji" alt="question" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/2753.png"></g-emoji> 也沒關係，我用一個範例給大家看</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f69753162454f772e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f69753162454f772e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/iu1bEOw.png" style="max-width:100%;"></a></p>
+<p>如上圖，假如我想要在我更動中做一些 test 去確保我的更動不會影響整體，</p>
+<p>( 雖然這邊都是 pick，也就是沒改動，但方便說明，大家請自行想像有改動<g-emoji class="g-emoji" alias="sweat_smile" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f605.png"><img class="emoji" alt="sweat_smile" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f605.png"></g-emoji> )</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f32633979636d532e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f32633979636d532e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/2c9ycmS.png" style="max-width:100%;"></a></p>
+<p>A 的部份 echo "test sucess" 這個自然不用有問題，</p>
+<p>但是 B 的部分就會出問題，因為根本沒有 error 這個指令，</p>
+<p>當如果執行到 shell 有錯誤時，他會停下來，讓你修正，</p>
+<p>如下圖，我們停在了 add c.py 這個 commit 上，因為接下來得 test error 了</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f795642336e61432e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f795642336e61432e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/yVB3naC.png" style="max-width:100%;"></a></p>
+<p>這時候我們可以修正問題，修正完了之後，再執行 <code>git rebase --continue</code>。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f594244306439562e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f594244306439562e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/YBD0d9V.png" style="max-width:100%;"></a></p>
+<p>這個功能我想應該是讓你去邊修改邊跑你自己的 test，確保改動都正常。</p>
+<h3><a id="user-content-drop" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#drop"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>drop</h3>
+<p><a href="https://youtu.be/u8imRiiSyzk" rel="nofollow">Youtube Tutorial - git rebase interactive - exec drop - PART 4</a></p>
+<div class="highlight highlight-source-batchfile"><pre># Commands:
+# p, pick = use commit
+# d, drop = remove commit</pre></div>
+<p>以下為官方的說明</p>
+<pre lang="text"><code>To drop a commit, replace the command "pick" with "drop", or just delete the matching line.
+</code></pre>
+<p>這個就簡單多了，移除這個 commit ( 包含 commit 內容 )，</p>
+<p>假設我們的 log 如下，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f7a7a35617256702e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f7a7a35617256702e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/zz5arVp.png" style="max-width:100%;"></a></p>
+<p>這次的目標是移除 f0a761d 和 980bd9a 和 1539219 這些 commit，</p>
+<p>先執行以下指令</p>
+<div class="highlight highlight-source-batchfile"><pre>git rebase -i 8f13aaa</pre></div>
+<p>將 pick 修改成 d 或 drop ( 如下圖 )</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f476f63314c48312e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f476f63314c48312e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/Goc1LH1.png" style="max-width:100%;"></a></p>
+<p>按 ENTER 之後，再用 log 確認一下，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f75377a325933552e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f75377a325933552e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/u7z2Y3U.png" style="max-width:100%;"></a></p>
+<p>從上圖可以發現，我們已經成功的移除 f0a761d 和 980bd9a 和 1539219 這些 commit，</p>
+<p>並且也看到 commit 內容也都被移除了，只剩下 a.py 而已。</p>
+<h2><a id="user-content-git-pull-補充" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-pull-%E8%A3%9C%E5%85%85"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git pull 補充</h2>
+<p>既然介紹完了 <code>git fetch</code> 以及 <code>git rebase</code> 之後，接下來我要再補充一些 <code>git pull</code> 額外的 options 參數</p>
+<div class="highlight highlight-source-batchfile"><pre>git pull [<span class="pl-k">&lt;</span>options<span class="pl-k">&gt;</span>] [<span class="pl-k">&lt;</span>repository<span class="pl-k">&gt;</span> [<span class="pl-k">&lt;</span>refspec<span class="pl-k">&gt;</span>…​]]</pre></div>
+<p>更多詳細指令可參考 <a href="https://git-scm.com/docs/git-pull#_options" rel="nofollow">https://git-scm.com/docs/git-pull#_options</a>。</p>
+<p>這裡簡單整理一下，</p>
+<div class="highlight highlight-source-batchfile"><pre>git pull = git fetch + git merge
+git pull --rebase = git fetch + git rebase</pre></div>
+<p>在 <a href="https://github.com/twtrubiks/Git-Tutorials#git-rebase">git-rebase</a> 中已經讓大家了解到使用 git-rebase 可以讓 code review 的人</p>
+<p>看起來比較舒服，所以就使用 <code>git pull --rebase</code> 吧 ( 前提是你要知道你在幹嘛 <g-emoji class="g-emoji" alias="smile" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png"><img class="emoji" alt="smile" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f604.png"></g-emoji> )。</p>
+<p>這邊我模擬 <code>git pull</code> 以及 <code>git pull --rebase</code> 的差異，順便加上衝突的情況，因為步驟蠻多的，</p>
+<p>所以如果你想了解更多他的概念，請參考以下手把手教學，</p>
+<p><a href="https://youtu.be/8h0K-2OaeSk" rel="nofollow">Youtube Tutorial - git pull vs git pull --rebase</a></p>
+<p>使用 <code>git pull</code> 後的結果，code review 的人一定翻桌 ( 如下圖 )<g-emoji class="g-emoji" alias="triumph" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f624.png"><img class="emoji" alt="triumph" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f624.png"></g-emoji></p>
+<p>這邊我有順便模擬衝突的時候，你會發現如果使用 <code>git pull</code> 會多一個 commit (也就是下方的 "fix conflict")。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f434e674b5233792e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f434e674b5233792e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/CNgKR3y.png" style="max-width:100%;"></a></p>
+<p>使用 <code>git pull --rebase</code> 後的結果，code review 的人表示溫馨  ( 如下圖 )<g-emoji class="g-emoji" alias="innocent" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f607.png"><img class="emoji" alt="innocent" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f607.png"></g-emoji></p>
+<p>這邊我有順便模擬衝突的時候，你會發現如果使用 <code>git pull --rebase</code> 並不會像剛剛一樣多了一個 commit，</p>
+<p>原因是因為當我們使用 <code>git pull --rebase</code> 造成衝突時，修好衝突的內容之後，git add xxxx，接著我們會</p>
+<p>直接執行 <code>git rebase --continue</code>。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f524b4d6f3975652e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f524b4d6f3975652e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/RKMo9ue.png" style="max-width:100%;"></a></p>
+<p>假設今天你執行了 <code>git pull --rebase</code> 之後，發現很難受 <g-emoji class="g-emoji" alias="fearful" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f628.png"><img class="emoji" alt="fearful" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f628.png"></g-emoji>，想要取消，</p>
+<p>直接執行 <code>git rebase --abort</code> 即可回到之前的狀態。</p>
+<h2><a id="user-content-git-cherry-pick" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-cherry-pick"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git-cherry-pick</h2>
+<p>看影片會更清楚，手把手帶大家動手做 <a href="https://youtu.be/x3UtKUvlDdI" rel="nofollow">Youtube Tutorial - git-cherry-pick</a></p>
+<p>git-cherry-pick 這個指令大家可能會比較陌生<g-emoji class="g-emoji" alias="confused" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f615.png"><img class="emoji" alt="confused" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f615.png"></g-emoji></p>
+<p>沒關係，我們先來看 <a href="https://git-scm.com/docs/git-cherry-pick" rel="nofollow">官方</a> 的說明</p>
+<pre lang="text"><code>git-cherry-pick - Apply the changes introduced by some existing commits
+</code></pre>
+<p>看完官方說明還是<g-emoji class="g-emoji" alias="question" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2753.png"><img class="emoji" alt="question" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/2753.png"></g-emoji><g-emoji class="g-emoji" alias="question" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2753.png"><img class="emoji" alt="question" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/2753.png"></g-emoji><g-emoji class="g-emoji" alias="question" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2753.png"><img class="emoji" alt="question" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/2753.png"></g-emoji></p>
+<p>沒關係，我來假設一個情境 ( 理解完它你就了解了 git-cherry-pick 的用途了 )，</p>
+<p>假設現在 master 分支的 log 如下圖</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f634d636e3679452e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f634d636e3679452e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/cMcn6yE.png" style="max-width:100%;"></a></p>
+<p>然後有一個 v1 的分支 log 如下圖</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4f5a374a4c6b652e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4f5a374a4c6b652e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/OZ7JLke.png" style="max-width:100%;"></a></p>
+<p>現在我希望 merge v1 分支中的 14dee93 - add d.py 這個 commit</p>
+<p>( 因為 14dee93 這個 commit 實在太棒了或是因為某些原因只需要這個 commit )</p>
+<p>遇到上述這種情況，就很適合使用 git-cherry-pick，也就是說我想要其他分支中的某幾個 commit 而已，</p>
+<p>不需要全部，換句話說，就是撿其他分支中的 commit 過來使用。</p>
+<p>了解了適合的使用情境，接下來我們就來實戰<g-emoji class="g-emoji" alias="smirk" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60f.png"><img class="emoji" alt="smirk" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f60f.png"></g-emoji></p>
+<p>首先，我想要 v1 分支中的 14dee93 - add d.py 這個 commit，</p>
+<p>所以我先切到 master 分支，接著執行</p>
+<div class="highlight highlight-source-batchfile"><pre>git cherry-pick 14dee93</pre></div>
+<p>如果你想要一次撿很多的分支過來也是可以，直接使用空白隔開即可</p>
+<div class="highlight highlight-source-batchfile"><pre>git cherry-pick 14dee93 xxxxxx xxxxxx xxxxxx xxxxx</pre></div>
+<p>如果沒有衝突，就會看到如下圖</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f59495458784d6b2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f59495458784d6b2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/YITXxMk.png" style="max-width:100%;"></a></p>
+<p>再觀看一下 master 的 log</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f69474549445a4c2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f69474549445a4c2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/iGEIDZL.png" style="max-width:100%;"></a></p>
+<p>你會發現我們成功把 v1 分支中的 14dee93 - add d.py 這個 commit 拿過來</p>
+<p>使用了，但現在它的 commit id 卻是 ab70429，這個是正常的，因為它需要</p>
+<p>重新新計算<g-emoji class="g-emoji" alias="smile" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png"><img class="emoji" alt="smile" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f604.png"></g-emoji></p>
+<p>其實，你會發現 git-cherry-pick 沒有想像中的困難<g-emoji class="g-emoji" alias="laughing" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f606.png"><img class="emoji" alt="laughing" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f606.png"></g-emoji></p>
+<p>在 cherry-pick 時，難免會遇到衝突，這邊我就再多做一個衝突的範例，</p>
+<p>假設 master 的 log 如下</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f707474625135552e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f707474625135552e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/pttbQ5U.png" style="max-width:100%;"></a></p>
+<p>v1 分支中的 log 如下，我想要它的 3a2f29a - add c.py and print world 這個 commit</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f524669624853362e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f524669624853362e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/RFibHS6.png" style="max-width:100%;"></a></p>
+<p>v2 分支中的 log 如下，我想要它的  553587b - add f.py這個 commit</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f49364c324677712e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f49364c324677712e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/I6L2Fwq.png" style="max-width:100%;"></a></p>
+<p>接下來我們就切回 master，然後 cherry-pick 這兩個 commit，</p>
+<p>這時候你會發現，它衝突了<g-emoji class="g-emoji" alias="fearful" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f628.png"><img class="emoji" alt="fearful" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f628.png"></g-emoji></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f664174514554302e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f664174514554302e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/fAtQET0.png" style="max-width:100%;"></a></p>
+<p>使用 <code>git status</code> 看一下狀態，其實 A 的部分都教你如何解衝突了</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4a385a70506e672e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4a385a70506e672e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/J8ZpPng.png" style="max-width:100%;"></a></p>
+<p>首先，我們先將 c.py 修正後，執行 <code>git add c.py</code>，接著再按照 A 的部份</p>
+<p>執行 <code>git cherry-pick --continue</code>，就時候會跳出一個編輯視窗，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6769796c56414c2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6769796c56414c2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/giylVAL.png" style="max-width:100%;"></a></p>
+<p>輸入完 commit message 之後，再輸入 <code>wq</code>，就會看到下圖</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f724138774d624f2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f724138774d624f2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/rA8wMbO.png" style="max-width:100%;"></a></p>
+<p>最後，再觀看 log，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6c4550363438632e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6c4550363438632e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/lEP648c.png" style="max-width:100%;"></a></p>
+<p>我們成功將我們要的 commit merge 到我們的 master 分支上了<g-emoji class="g-emoji" alias="kissing_smiling_eyes" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f619.png"><img class="emoji" alt="kissing_smiling_eyes" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f619.png"></g-emoji></p>
+<p>想了解更多的使用方法，可參考官方文件
+<a href="https://git-scm.com/docs/git-cherry-pick" rel="nofollow">https://git-scm.com/docs/git-cherry-pick</a>。</p>
+<h2><a id="user-content-git-revert" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-revert"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git revert</h2>
+<p>假設我 commit history 為 A1 -&gt; A2 -&gt; A3 -&gt; A4 -&gt; A5 -&gt; A6</p>
+<p>我現在想要回 A4 這個 commit , 這時候我就可以使用  git revert ！！</p>
+<p>先 revert A6</p>
+<div class="highlight highlight-source-batchfile"><pre>git revert A6</pre></div>
+<p>再 revert A5</p>
+<div class="highlight highlight-source-batchfile"><pre>git revert A5</pre></div>
+<p>假如你再看現在的 commit history , 他會長的像這樣</p>
+<p>A1 -&gt; A2 -&gt; A3 -&gt; A4 -&gt; A5 -&gt; A6 -&gt; A6_revert -&gt; A5_revert</p>
+<p>這時候，其實你的 commit 就是在 A4 這個位置 。</p>
+<p>使用 git revert 的好處，就是可以保留 commit history , 萬一你又後悔了，</p>
+<p>也可以在 revert 回去。</p>
+<h2><a id="user-content-解決衝突" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#%E8%A7%A3%E6%B1%BA%E8%A1%9D%E7%AA%81"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>解決衝突</h2>
+<p>在進行合併的時候，有時候會顯示出 <strong>衝突conflicts</strong> ，這時候就必須手動解決衝突後再送出。</p>
+<p>通常我目前最容易遇到衝突 conflicts ，就是使用 pull 這個指令的時候</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f457068305677312e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f457068305677312e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/Eph0Vw1.jpg" style="max-width:100%;"></a></p>
+<p>仔細看這張圖，如果使用<strong>pull</strong>這個指令，會幫你 <strong>自動 merge</strong> ( 如圖裡的 Auto-merging Hello.py )，</p>
+<p>然後接著看 CONFLICT ( content ) : Merge conflict in Hello.py ，又說 Automatic merge failed，</p>
+<p>就是告訴你， Hello.py 這個檔案有衝突，然後你必須手動下去解決衝突。</p>
+<p>git status 可以告訴我們衝突的文件。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f766c5663586e382e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f766c5663586e382e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/vlVcXn8.jpg" style="max-width:100%;"></a></p>
+<p>打開衝突文件我們會看到 Git 用 &lt;&lt;&lt;&lt;&lt;&lt;&lt;，=======，&gt;&gt;&gt;&gt;&gt;&gt;&gt; 標記出不同分支的內容，我們修改完畢後再提交：</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f726c504f61786e2e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f726c504f61786e2e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/rlPOaxn.jpg" style="max-width:100%;"></a></p>
+<p>通常我們會手動下去修改衝突 conflicts，然後再加個 commit</p>
+<div class="highlight highlight-source-batchfile"><pre>git add Hello.py
+git commit -m <span class="pl-s"><span class="pl-pds">"</span>conflict fixed<span class="pl-pds">"</span></span></pre></div>
+<h3><a id="user-content-假設今天我們想要放棄這個-merge-我們該怎麼做呢-" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#%E5%81%87%E8%A8%AD%E4%BB%8A%E5%A4%A9%E6%88%91%E5%80%91%E6%83%B3%E8%A6%81%E6%94%BE%E6%A3%84%E9%80%99%E5%80%8B-merge-%E6%88%91%E5%80%91%E8%A9%B2%E6%80%8E%E9%BA%BC%E5%81%9A%E5%91%A2-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>假設今天我們想要放棄這個 merge 我們該怎麼做呢 ？</h3>
+<div class="highlight highlight-source-batchfile"><pre>git merge --abort</pre></div>
+<p>或</p>
+<div class="highlight highlight-source-batchfile"><pre>git reset --hard HEAD</pre></div>
+<p>可以取消這次的 merge 回到 merge 前。</p>
+<h2><a id="user-content-git-stash-指令" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-stash-%E6%8C%87%E4%BB%A4"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git stash 指令</h2>
+<p>很多時候，我們正在開發一個新功能又或是 debug，然後突然有一個功能需要緊急修正，</p>
+<p>但你又不想 commit 現在的狀況，因為根本沒意義，事情只做了一半，這時候 <strong>stash</strong></p>
+<p>這個實用的指令就派上用場了。</p>
+<p>舉個例子，假設我們改了 A.py 和 B.py 這兩個檔案</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f377858305431542e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f377858305431542e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/7xX0T1T.jpg" style="max-width:100%;"></a></p>
+<p>然後，現在突然有一個bug必須馬上 ( 立刻 ) 處理，但是，啊我手上的事情還沒做完阿~~~~
+這時候，可以利用以下指令</p>
+<div class="highlight highlight-source-batchfile"><pre>git stash</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f63594348386d562e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f63594348386d562e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/cYCH8mV.jpg" style="max-width:100%;"></a></p>
+<p>假如你想要更清楚自己這次的 stash 原因是什麼，或是這是正在開發什麼功能
+可以使用以下指令</p>
+<div class="highlight highlight-source-batchfile"><pre>git stash save -u <span class="pl-s"><span class="pl-pds">"</span>我是註解<span class="pl-pds">"</span></span></pre></div>
+<div class="highlight highlight-source-batchfile"><pre>git stash save -u <span class="pl-s"><span class="pl-pds">"</span>feature<span class="pl-pds">"</span></span></pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6e4753313150782e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6e4753313150782e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/nGS11Px.jpg" style="max-width:100%;"></a></p>
+<p>接下來你可以使用 status 指令，你會發現變乾淨了</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f5866353347664d2e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f5866353347664d2e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/Xf53GfM.jpg" style="max-width:100%;"></a></p>
+<p>並且可以使用下列的指令來觀看 stash 裡面的東西</p>
+<div class="highlight highlight-source-batchfile"><pre>git stash list</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6a5150695969582e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6a5150695969582e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/jQPiYiX.jpg" style="max-width:100%;"></a></p>
+<p>然後你很努力地解決這個 bug，commit 完之後，
+可以再使用下列的指令把 stash 取回來，這指令取回後也會刪除 stash</p>
+<div class="highlight highlight-source-batchfile"><pre>git stash pop</pre></div>
+<p>假設今天你有很多的 stash，你可以指定，如下</p>
+<div class="highlight highlight-source-batchfile"><pre>git stash pop stash<span class="pl-k">@</span>{0}</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f7a5646376e6f322e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f7a5646376e6f322e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/zVF7no2.jpg" style="max-width:100%;"></a></p>
+<p>你會發現剛剛的東西回來了~</p>
+<p>如果你希望使用 stash 取回之後，不希望刪除 stash ，可以使用下列的指令</p>
+<div class="highlight highlight-source-batchfile"><pre>git stash apply</pre></div>
+<p>如下圖，你可以發現取回後， stash 並沒有被刪除</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f773349703369572e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f773349703369572e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/w3Ip3iW.jpg" style="max-width:100%;"></a></p>
+<p>如果你只是想要刪除暫存，可以使用下列的指令</p>
+<div class="highlight highlight-source-batchfile"><pre>git stash clear</pre></div>
+<p>從下圖可以發現，stash 裡面的東西被我們刪除了</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f50767a756662512e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f50767a756662512e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/PvzufbQ.jpg" style="max-width:100%;"></a></p>
+<p>如果你想丟棄指定的 stash，可以使用</p>
+<div class="highlight highlight-source-batchfile"><pre>git stash drop stash<span class="pl-k">@</span>{0}</pre></div>
+<h2><a id="user-content-git-show" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-show"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git show</h2>
+<p>一般來說，我只用他來看這個 commit 修改了哪些東西</p>
+<div class="highlight highlight-source-batchfile"><pre>git show <span class="pl-k">&lt;</span>commit ID<span class="pl-k">&gt;</span></pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f726a706c38564c2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f726a706c38564c2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/rjpl8VL.png" style="max-width:100%;"></a></p>
+<div class="highlight highlight-source-batchfile"><pre>git show [<span class="pl-k">&lt;</span>options<span class="pl-k">&gt;</span>] [<span class="pl-k">&lt;</span>object<span class="pl-k">&gt;</span>…​]</pre></div>
+<p>其他更詳細的介紹，請參考 <a href="https://git-scm.com/docs/git-show" rel="nofollow">https://git-scm.com/docs/git-show</a></p>
+<h2><a id="user-content-git-diff" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-diff"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git diff</h2>
+<p>以下為官方說明</p>
+<pre lang="text"><code> Show changes between commits, commit and working tree, etc
+</code></pre>
+<p>這邊舉幾個例子，</p>
+<p>檔案還沒進入暫存區 ( Stage )，也就是執行 git add xxx 之前，</p>
+<p>可以看做了那些修改，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6e6a35477a35502e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6e6a35477a35502e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/nj5Gz5P.png" style="max-width:100%;"></a></p>
+<p>也可以看 commits 之間的差異</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4a4d4a34386a4f2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4a4d4a34386a4f2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/JMJ48jO.png" style="max-width:100%;"></a></p>
+<p>其他更詳細的介紹，請參考 <a href="https://git-scm.com/docs/git-diff" rel="nofollow">https://git-scm.com/docs/git-diff</a></p>
+<h2><a id="user-content-git-grep" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-grep"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git grep</h2>
+<p>以下為官方說明</p>
+<pre lang="text"><code>git-grep - Print lines matching a pattern
+</code></pre>
+<p>簡單說，就是可以幫你找出符合的 pattern，舉個例子，我希望找出內容</p>
+<p>有包含 hello 這個 pattern 的檔案，這時候，就可以執行以下指令</p>
+<div class="highlight highlight-source-batchfile"><pre>git grep <span class="pl-s"><span class="pl-pds">"</span>hello<span class="pl-pds">"</span></span></pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f743576787676702e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f743576787676702e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/t5vxvvp.png" style="max-width:100%;"></a></p>
+<p>會顯示出該 pattern 在個檔案以及哪段程式碼有用到。</p>
+<p>其他更詳細的介紹，請參考 <a href="https://git-scm.com/docs/git-grep" rel="nofollow">https://git-scm.com/docs/git-grep</a></p>
+<h2><a id="user-content-git-submodule" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-submodule"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git Submodule</h2>
+<p>由於這個內容稍微比較多，所以我另外寫了一篇，</p>
+<ul>
+<li>
+<p><a href="https://youtu.be/IDMWLJCbCGo" rel="nofollow">Youtube Tutorial PART 1 - git Submodule tutorial - how to create submodule</a></p>
+</li>
+<li>
+<p><a href="https://youtu.be/ogZoZOVyAYI" rel="nofollow">Youtube Tutorial PART 2 - git Submodule tutorial - how to update submodule</a></p>
+</li>
+<li>
+<p><a href="https://youtu.be/f5_O5Iu6pJo" rel="nofollow">Youtube Tutorial PART 3 - git Submodule tutorial - how to clone submodule</a></p>
+</li>
+<li>
+<p><a href="https://youtu.be/imndFN7AvFA" rel="nofollow">Youtube Tutorial PART 4 - git Submodule tutorial - how to remove submodule</a></p>
+</li>
+</ul>
+<p><a href="https://github.com/twtrubiks/Git-Tutorials/blob/master/git_submodule_turorial.md">git Submodule tutorial <g-emoji class="g-emoji" alias="memo" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png"><img class="emoji" alt="memo" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f4dd.png"></g-emoji></a></p>
+<h2><a id="user-content-git-subtree" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-subtree"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git Subtree</h2>
+<p>由於這個內容稍微比較多，所以我另外寫了一篇，</p>
+<ul>
+<li>
+<p><a href="https://youtu.be/kEvgK2gH_vg" rel="nofollow">Youtube Tutorial PART 1 - git subtree tutorial - how to create subtree</a></p>
+</li>
+<li>
+<p><a href="https://youtu.be/Df3zc1VOqN8" rel="nofollow">Youtube Tutorial PART 2 - git subtree tutorial - how to push subtree</a></p>
+</li>
+<li>
+<p><a href="https://youtu.be/dE-D2yrD4ws" rel="nofollow">Youtube Tutorial PART 3 - git subtree tutorial - how to pull/create subtree</a></p>
+</li>
+</ul>
+<p><a href="https://github.com/twtrubiks/Git-Tutorials/blob/master/git_subtree_turorial.md">git subtree tutorial <g-emoji class="g-emoji" alias="memo" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png"><img class="emoji" alt="memo" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f4dd.png"></g-emoji></a></p>
+<h2><a id="user-content-git-其他設定" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-%E5%85%B6%E4%BB%96%E8%A8%AD%E5%AE%9A"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git 其他設定</h2>
+<p>我們已經設定了 user.name 以及 user.email ，但 Git 上其實還有很多可設定的東西</p>
+<p>有時候，我們必須把某些檔案 ( 文件夾 ) 放到 Git 工作目錄中，但又不能提交它們，</p>
+<p>像是密碼設定或是編譯器 IDE 產生出來的東西之類的，</p>
+<p>每次 git status 都會看到紅紅的 Untracked files ，通常會覺得有點煩......</p>
+<p>這問題 Git 也幫我們想過，只要在 Git 工作區的根目錄下新建一個特殊的 <strong>.gitignore</strong> 文件 ，</p>
+<p>然後把要忽略的文件 ( 檔案 ) 名稱輸入進去， Git 就會自動忽略這些文件。</p>
+<p>當然不需要自己從頭寫 .gitignore 文件， GitHub 已經幫我們準備了一些文件 <a href="https://github.com/github/gitignore">gitignore</a></p>
+<p><strong>.gitignore</strong> 檔案直接放在目錄底下即可</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f387248507349492e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f387248507349492e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/8rHPsII.jpg" style="max-width:100%;"></a></p>
+<h3><a id="user-content-gitignore-檔案格式範例" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#gitignore-%E6%AA%94%E6%A1%88%E6%A0%BC%E5%BC%8F%E7%AF%84%E4%BE%8B"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>.gitignore 檔案格式範例</h3>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f573363786b39722e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f573363786b39722e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/W3cxk9r.jpg" style="max-width:100%;"></a></p>
+<p>有時候常常手殘 key 錯指令或是記不起來</p>
+<p>如果我們打 git st 就表示 git status 那該有多棒!!!</p>
+<p>所以我們可以自己設定，讓 Git 以後打 <strong>git st = git status</strong>
+如下圖，原本不能使用 git st ，設定完之後就可以使用了。</p>
+<div class="highlight highlight-source-batchfile"><pre>git config --global alias.st status</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f344e4e617367422e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f344e4e617367422e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/4NNasgB.jpg" style="max-width:100%;"></a></p>
+<div class="highlight highlight-source-batchfile"><pre>git config --global alias.br branch</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4e49633731414f2e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4e49633731414f2e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/NIc71AO.jpg" style="max-width:100%;"></a></p>
+<div class="highlight highlight-source-batchfile"><pre>git config --global alias.ck checkout</pre></div>
+<div class="highlight highlight-source-batchfile"><pre>git config --global alias.cm commit</pre></div>
+<div class="highlight highlight-source-batchfile"><pre>git config --global alias.lg <span class="pl-s"><span class="pl-pds">"</span>log --graph --pretty=format:'<span class="pl-smi">%Cred%</span>h<span class="pl-smi">%Creset -%</span>C(yellow)<span class="pl-smi">%d%</span>Creset <span class="pl-smi">%s %</span>Cgreen(<span class="pl-smi">%cr) %</span>C(bold blue)&lt;<span class="pl-smi">%an&gt;%</span>Creset' --abbrev-commit --date=relative<span class="pl-pds">"</span></span></pre></div>
+<p>將前面這一大串變成一個別名，這樣以後只需要執行 <code>git lg</code> 即可，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4976514c734d522e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4976514c734d522e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/IvQLsMR.png" style="max-width:100%;"></a></p>
+<p>可能有人會問，那這個設定檔文件在哪裡呢?</p>
+<p>通常會在你的使用者底下，例如我這台電腦使用者為 HJ，設定檔文件就會在 <strong>C:\Users\HJ</strong> 底下，</p>
+<p>他是一個  <strong>隱藏文件.gitconfig</strong> ，打開他的話格式如下。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f69586a497176392e6a7067"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f69586a497176392e6a7067" alt="alt tag" data-canonical-src="https://i.imgur.com/iXjIqv9.jpg" style="max-width:100%;"></a></p>
+<p>不知道大家有沒有注意到 <code>--global</code> 這個參數，他代表的意思是全域的，如果說你今天是執行</p>
+<div class="highlight highlight-source-batchfile"><pre>git config alias.stu status</pre></div>
+<p>代表只有在該目錄底下時才會有作用。</p>
+<p>那這個有什麼用呢？ 試想一種情境，假設你在特定的資料夾底下，想要使用特定的信箱去 push，而其他的資料夾，</p>
+<p>則一樣使用公司的信箱，這時候，就非常適合使用這種方法完成。</p>
+<p>更多資訊細節可使用以下命令查看</p>
+<div class="highlight highlight-source-batchfile"><pre>man git-config</pre></div>
+<h2><a id="user-content-使用-git-一次-push-到多個不同的遠端--remote-" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#%E4%BD%BF%E7%94%A8-git-%E4%B8%80%E6%AC%A1-push-%E5%88%B0%E5%A4%9A%E5%80%8B%E4%B8%8D%E5%90%8C%E7%9A%84%E9%81%A0%E7%AB%AF--remote-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>使用 Git 一次 Push 到多個不同的遠端 ( remote )</h2>
+<p>假如有一天 github 掛了，這樣是不是就不能 work 了，你可能會說本地端還有 ?</p>
+<p>但......多備份絕對是好事 !!  再這裡介紹如何一次 Push 到多個不同的遠端 ( remote )</p>
+<p>這裡用 <a href="https://bitbucket.org/product" rel="nofollow">Bitbucket</a> 當作範例</p>
+<p>先使用下方指令查看</p>
+<div class="highlight highlight-source-batchfile"><pre>git remote -v</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f51623556486f502e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f51623556486f502e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/Qb5VHoP.png" style="max-width:100%;"></a></p>
+<p>git remote 這個指令的更多說明可參考官方文件 <a href="https://git-scm.com/docs/git-remote" rel="nofollow">git-remote</a>。</p>
+<p>接著我們使用下列指令新增一個 origin 的遠端</p>
+<div class="highlight highlight-source-batchfile"><pre>git remote set-url --add origin <span class="pl-k">&lt;</span>url<span class="pl-k">&gt;</span></pre></div>
+<div class="highlight highlight-source-batchfile"><pre>git remote set-url --add origin git<span class="pl-k">@</span>github.com:twtrubiks/test2.git</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f464b7a657856452e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f464b7a657856452e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/FKzexVE.png" style="max-width:100%;"></a></p>
+<p>我們再用 git remote -v 查看一次，你會發現多了剛剛新增的遠端 ( remote )</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f703171374334622e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f703171374334622e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/p1q7C4b.png" style="max-width:100%;"></a></p>
+<p>最後我們再 push</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f36564b6838427a2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f36564b6838427a2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/6VKh8Bz.png" style="max-width:100%;"></a></p>
+<p>仔細看，是不是一次 push 到多個不同的遠端 ( remote )，非常方便!!</p>
+<p><em><strong>GitHub</strong></em></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4a6c6a504a484a2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4a6c6a504a484a2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/JljPJHJ.png" style="max-width:100%;"></a></p>
+<p><em><strong>Bitbucket</strong></em></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f726b59484e6c342e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f726b59484e6c342e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/rkYHNl4.png" style="max-width:100%;"></a></p>
+<p>P.S 設定檔在資料夾底下的隱藏檔 ".git" 底下，裡面有一個 config</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f343178623865752e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f343178623865752e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/41xb8eu.png" style="max-width:100%;"></a></p>
+<p>補充幾個 git remote 的指令，他也支援 rename 以及 remove ，</p>
+<p>現在的 remote 如下，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f727239534533672e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f727239534533672e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/rr9SE3g.png" style="max-width:100%;"></a></p>
+<p>讓我們重新命名 remote，語法如下，</p>
+<pre lang="text"><code>git remote rename &lt;old&gt; &lt;new&gt;
+</code></pre>
+<pre lang="text"><code>git remote rename origin2 origin
+</code></pre>
+<p>執行後，你會發現 remote 成功被修改成 origin 了，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6978503148375a2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f6978503148375a2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/ixP1H7Z.png" style="max-width:100%;"></a></p>
+<p>接下來我們試試 remove，語法如下，</p>
+<pre lang="text"><code>git remote remove &lt;name&gt;
+</code></pre>
+<pre lang="text"><code>git remote remove origin
+</code></pre>
+<p>成功刪除，現在 remote 是空的了，</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4f5146525744672e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4f5146525744672e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/OQFRWDg.png" style="max-width:100%;"></a></p>
+<p>接下來我們嘗試新增一個 remote，指令如下，</p>
+<pre lang="text"><code>git remote add [-t &lt;branch&gt;] [-m &lt;master&gt;] [-f] [--[no-]tags] [--mirror=&lt;fetch|push&gt;] &lt;name&gt; &lt;url&gt;
+</code></pre>
+<div class="highlight highlight-source-batchfile"><pre>git remote add origin git<span class="pl-k">@</span>github.com:blue-rubiks/t11.git</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f634b73694242732e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f634b73694242732e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/cKsiBBs.png" style="max-width:100%;"></a></p>
+<p>如果我們想修改 origin 的 url，可以使用</p>
+<div class="highlight highlight-source-batchfile"><pre>git remote set-url origin git<span class="pl-k">@</span>blue.github.com:blue-rubiks/t11.git</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4c4a4943544e4d2e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4c4a4943544e4d2e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/LJICTNM.png" style="max-width:100%;"></a></p>
+<h2><a id="user-content-multiple-ssh-keys-settings-for-different-github-account" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#multiple-ssh-keys-settings-for-different-github-account"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Multiple SSH Keys settings for different github account</h2>
+<ul>
+<li><a href="https://youtu.be/gDxG-4tF7B8" rel="nofollow">Youtube Tutorial - Multiple SSH Keys settings for different github account</a></li>
+</ul>
+<p><a href="https://github.com/twtrubiks/Git-Tutorials/blob/master/Multiple_SSH_Keys_settings.md">Multiple SSH Keys settings for different github account</a></p>
+<h2><a id="user-content-git-flow--基本教學以及概念" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#git-flow--%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8%E4%BB%A5%E5%8F%8A%E6%A6%82%E5%BF%B5"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Git-Flow  基本教學以及概念</h2>
+<ul>
+<li>
+<p><a href="https://youtu.be/zXlta66thZY" rel="nofollow">Git-Flow Tutorials - youtube</a></p>
+</li>
+<li>
+<p><a href="https://youtu.be/ualXHytifbg" rel="nofollow">Git-Flow SmartGit Tutorials - youtube</a></p>
+</li>
+</ul>
+<p><a href="https://github.com/twtrubiks/Git-Tutorials/tree/master/Git-Flow">Git-Flow  基本教學以及概念</a></p>
+<h2><a id="user-content-reference" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#reference"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reference</h2>
+<ul>
+<li><a href="https://opensource.com/article/18/4/git-tips" rel="nofollow">13 Git tips for Git's 13th birthday</a></li>
+</ul>
+<h2><a id="user-content-donation" class="anchor" aria-hidden="true" href="https://github.com/twtrubiks/Git-Tutorials#donation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Donation</h2>
+<p>文章都是我自己研究內化後原創，如果有幫助到您，也想鼓勵我的話，歡迎請我喝一杯咖啡<g-emoji class="g-emoji" alias="laughing" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f606.png"><img class="emoji" alt="laughing" height="20" width="20" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/1f606.png"></g-emoji></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4c5263743978612e706e67"><img src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/68747470733a2f2f692e696d6775722e636f6d2f4c5263743978612e706e67" alt="alt tag" data-canonical-src="https://i.imgur.com/LRct9xa.png" style="max-width:100%;"></a></p>
+<p><a href="https://payment.opay.tw/Broadcaster/Donate/9E47FDEF85ABE383A0F5FC6A218606F8" rel="nofollow">贊助者付款</a></p>
+</article>
+      </div>
+  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+        
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">© 2018 <span title="0.31932s from unicorn-454632924-jxw4f">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com/">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon mr-lg-4" href="https://github.com/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3"><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3"><a href="https://blog.github.com/" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-j7P2Pw3104HznNqyNm7WuCF8Lstcf/sPX5meP6e5RFF177kmi6SAbkZ52A3ttKj0cRHLRrUbk7C1w1xtwh52zA==" type="application/javascript" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/frameworks-c163002918ede72971a36e0025f67a4a.js.下載"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-gtafyIv6SUhe0hVSBIE4wGG2amzWBhSqbqnU0IhJ6jRFWJTPtR4YM6aCEg04g8Xybb1tp12e9aDxig9cbu6e6g==" type="application/javascript" src="./twtrubiks_Git-Tutorials_ Git-Tutorials GIT基本使用教學_files/github-8d674aa76ee19b76d61e8afe7d9b1209.js.下載"></script>
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="https://github.com/twtrubiks/Git-Tutorials">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="https://github.com/twtrubiks/Git-Tutorials">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  <template id="site-details-dialog"></template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+<div id="hovercard-aria-description" class="sr-only">
+  Press h to open a hovercard with more details.
+</div>
+
+
+  
+
+
+</body></html>
